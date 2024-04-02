@@ -24,10 +24,10 @@ void Credits::handle_input() {
 Credits::~Credits() {}
 
 
-// Testing
-int main(int argc, char **argv) {
-    Credits c = Credits();
-    c.render();
-    c.handle_input();
-    return 0;
-}
+// // Testing
+// int main(int argc, char **argv) {
+//     Credits c = Credits();
+//     c.render();
+//     c.handle_input();
+//     return 0;
+// }
