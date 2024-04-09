@@ -1,11 +1,14 @@
-#ifndef CREDITS
-#define CREDITS
+#ifndef MENU
+#define MENU
 
 #include <iostream>
 #include "scene.h"
 
 class Menu : public Scene {
-
+private:
+    std::string PLAY_GAME = "1";
+    std::string CHANGE_SETTINGS = "2";
+    std::string VIEW_CREDITS = "3";
 public:
     Menu();
     ~Menu();
