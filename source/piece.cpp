@@ -3,12 +3,13 @@
 #include "piece.h"
 #include "position.h"
 #include "color.h"
+#include "player.h"
 
 Piece::Piece() {}
 
-Piece::Piece(int x, int y, Color c) {
+Piece::Piece(int x, int y, Player *p) {
     this->position = Position(x,y);
-    this->color = color;
+    this->player = p;
 }
 
 Piece::~Piece() {}
@@ -21,10 +22,15 @@ Position Piece::get_position() {
     return this->position;
 }
 
-
-// Testing
-int main(int argc, char **argv) {
-    Piece p = Piece(3,4,Black);
-    std::cout << p.get_position().x << "x" << p.get_position().y << std::endl;
-    return 0;
+Player *Piece::get_player() {
+    return this->player;
 }
+
+
+// // Testing
+// int main(int argc, char **argv) {
+//     Player play = Player();
+//     Piece p = Piece(3,4,&play);
+//     std::cout << p.get_position().x << "x" << p.get_position().y << std::endl;
+//     return 0;
+// }
