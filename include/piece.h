@@ -6,6 +6,15 @@
 #include "position.h"
 #include "color.h"
 
+/**
+ * @brief Class to represent a playable piece in ConnectN.
+ * 
+ * A piece is composed of two components: the position and player.
+ * 
+ * @see Position
+ * @see Player
+ * 
+ */
 class Piece {
 private:
     Position position;

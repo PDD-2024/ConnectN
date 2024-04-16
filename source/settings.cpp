@@ -2,10 +2,6 @@
 #include <string>
 #include "settings.h"
 
-/** Constructor that configures the inital state of the class.
- *
- * This constructor sets the content (visual representation) of the settings scene and sets the rendered state of the scene to false.
- */
 Settings::Settings() {
     // language = settings_manager.language.to_string()
     std::string language = "English";

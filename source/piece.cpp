@@ -5,8 +5,18 @@
 #include "color.h"
 #include "player.h"
 
+/**
+ * @brief Default constructor to create a new piece object.
+ */
 Piece::Piece() {}
 
+/**
+ * @brief Constructor to create a new piece object with a (x, y) position and associated player.
+ * 
+ * @param x X position of the piece.
+ * @param y Y Position of the piece
+ * @param p Player associated with the piece.
+ */
 Piece::Piece(int x, int y, Player *p) {
     this->position = Position(x,y);
     this->player = p;
@@ -14,14 +24,29 @@ Piece::Piece(int x, int y, Player *p) {
 
 Piece::~Piece() {}
 
+/**
+ * @brief Sets the position of the piece object.
+ * 
+ * @param new_position Position enum to represent the (x, y) of the piece object.
+ */
 void Piece::set_position(Position new_position) {
     this->position = new_position;
 }
 
+/**
+ * @brief Gets the position of the piece object.
+ * @see Position
+ * @return Position of the piece object.
+ */
 Position Piece::get_position() {
     return this->position;
 }
 
+/**
+ * @brief Gets the player associated with the piece object.
+ * @see Player
+ * @return Player associated with the piece object (Player*) 
+ */
 Player *Piece::get_player() {
     return this->player;
 }

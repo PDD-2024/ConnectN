@@ -8,11 +8,13 @@ Menu::Menu() {
     content = std::string("\n\n\nMenu - Choose an option\n\t(") + PLAY_GAME + std::string(") Play Game\n\t(") + CHANGE_SETTINGS + std::string(") Change Settings\n\t(") + VIEW_CREDITS + std::string(") View Credits\n\n");
 }
 
+/// <inheritdoc />
 void Menu::render() {
     std::cout << content << std::endl;
     isRendered = true;
 }
 
+/// <inheritdoc />
 void Menu::handle_input() {
     std::string input;
     getline(std::cin, input);

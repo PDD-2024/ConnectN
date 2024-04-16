@@ -5,6 +5,10 @@
 #include "player.h"
 #include "color.h"
 
+/**
+ * @brief Class that represents a player in ConnectN.
+ * A player has two components: a name and color.
+ */
 class Player {
 private:
     std::string name;
