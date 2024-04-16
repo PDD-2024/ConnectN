@@ -1,5 +1,14 @@
 \doxysection{Settings Class Reference}
 \hypertarget{class_settings}{}\label{class_settings}\index{Settings@{Settings}}
+
+
+Class that implements the scene class to create the "{}settings scene"{}.  
+
+
+
+
+{\ttfamily \#include $<$settings.\+h$>$}
+
 Inheritance diagram for Settings\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -8,6 +17,8 @@ Inheritance diagram for Settings\+:\begin{figure}[H]
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_settings_ab7169a6eefce79566dd07db3b1e5e967}{Settings}} ()
 \item 
 void \mbox{\hyperlink{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f}{render}} () override
 \item 
@@ -23,12 +34,32 @@ bool {\bfseries is\+Rendered}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Class that implements the scene class to create the "{}settings scene"{}. 
+
+Visually and functionally represents the settings scene. Utilized by the user to modify their personal application settings. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_settings_ab7169a6eefce79566dd07db3b1e5e967}\label{class_settings_ab7169a6eefce79566dd07db3b1e5e967} 
+\index{Settings@{Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{Settings()}{Settings()}}
+{\footnotesize\ttfamily Settings\+::\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor that configures the inital state of the class.
+
+This constructor sets the content (visual representation) of the settings scene and sets the rendered state of the scene to false. 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf}\label{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf} 
 \index{Settings@{Settings}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!Settings@{Settings}}
 \doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
 {\footnotesize\ttfamily void Settings\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+
 
 
 
@@ -39,6 +70,10 @@ Implements \mbox{\hyperlink{class_scene}{Scene}}.
 \index{render@{render}!Settings@{Settings}}
 \doxysubsubsection{\texorpdfstring{render()}{render()}}
 {\footnotesize\ttfamily void Settings\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+
 
 
 

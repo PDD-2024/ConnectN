@@ -8,11 +8,13 @@ Credits::Credits() {
     content = "\n\n\nCreated by J&B Development\n\tJoel Markley - Developer\n\tBrooklyn Cooper - Developer\n\nEnter 1 to return to menu\n\n";
 }
 
+/// <inheritdoc />
 void Credits::render() {
     std::cout << content << std::endl;
     isRendered = true;
 }
 
+/// <inheritdoc />
 void Credits::handle_input() {
     std::string input;
     getline(std::cin, input);

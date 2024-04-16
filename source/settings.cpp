@@ -2,6 +2,10 @@
 #include <string>
 #include "settings.h"
 
+/** Constructor that configures the inital state of the class.
+ *
+ * This constructor sets the content (visual representation) of the settings scene and sets the rendered state of the scene to false.
+ */
 Settings::Settings() {
     // language = settings_manager.language.to_string()
     std::string language = "English";
@@ -9,11 +13,13 @@ Settings::Settings() {
     content = "\n\nCurrent language: " + language + "\n\nEnter: (1) to change language\t(2) to save settings and return to menu\t(3) to return to menu without saving\n\n";
 }
 
+/// <inheritdoc />
 void Settings::render() {
     std::cout << content << std::endl;
     isRendered = true;
 }
 
+/// <inheritdoc />
 void Settings::handle_input() {
     std::string input;
     getline(std::cin, input);
