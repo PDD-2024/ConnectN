@@ -1,9 +1,9 @@
 #include <iostream>
-#include "settings.h"
+#include "credits.h"
+#include "menu.h"
 
 int main(int, char**){
     std::cout << "Hello, from ConnectN!\n";
-
-    Settings scsne;
-    scsne.render();
+    Credits c = Credits();
+    c.render();
 }

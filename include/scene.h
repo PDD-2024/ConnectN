@@ -10,7 +10,13 @@ class Scene {
 public:
     std::string content; /**< Content that visually represents the scene. To be configured in derived class constructors. */
     bool isRendered; /**< Boolean to represent whether a scene is being rendered. */
+    /**
+     * @brief Method utilized to render the scene's content.
+     */
     virtual void render() = 0;
+    /**
+     * @brief Method utilized to accept and handle user input after rendering the scene.
+     */
     virtual void handle_input() = 0;
 };
 
