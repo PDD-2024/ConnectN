@@ -31,9 +31,9 @@ Credits::~Credits() {}
 
 
 // Testing
-int main(int argc, char **argv) {
-    Credits c = Credits();
-    c.render();
-    c.handle_input();
-    return 0;
-}
+// int main(int argc, char **argv) {
+//    Credits c = Credits();
+//    c.render();
+//    c.handle_input();
+//    return 0;
+//}
