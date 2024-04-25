@@ -10,11 +10,15 @@
 class Credits : public Scene {
 private:
     std::string RETURN_TO_MENU = "1";
-public:
+
+    static Credits* creditsInstance;
+
     Credits();
+public:
     ~Credits();
     void render() override;
     void handle_input() override;
+    static Credits* get_instance();
 };
 
 #endif

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "credits.h"
+#include "scene_manager.h"
+#include "menu.h"
 
 Credits::Credits() {
     isRendered = false;
@@ -16,15 +18,30 @@ void Credits::render() {
 
 /// <inheritdoc />
 void Credits::handle_input() {
+    SceneManager* sm = SceneManager::get_instance();
+
+    bool isValidInput = false;
     std::string input;
-    getline(std::cin, input);
-    if (input == RETURN_TO_MENU) {
-        std::cout << "Return to menu!" << std::endl;
-        // TODO: use SceneManager to switch scene back to menu
-    } else {
-        // TODO: handle error
-        std::cout << "Invalid input!" << std::endl;
+    while (!isValidInput) {
+        getline(std::cin, input);
+        if (input == RETURN_TO_MENU) {
+            isValidInput = true;
+            std::cout << "Return to menu!" << std::endl;
+            sm->set_scene(Menu::get_instance());
+        } else {
+            std::cout << "Invalid input! Please enter a valid input: " << std::endl;
+        } 
     }
+}
+
+Credits* Credits::creditsInstance = nullptr;
+
+Credits* Credits::get_instance() {
+    if (creditsInstance == nullptr) {
+        creditsInstance = new Credits();
+    }
+
+    return creditsInstance;
 }
 
 Credits::~Credits() {}

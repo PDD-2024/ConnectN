@@ -14,11 +14,14 @@ private:
     std::string SAVE_AND_RETURN_TO_MENU = "2"; /**< Input that indicates a desire to save the current settings and return to the main menu scene. */
     std::string RETURN_TO_MENU = "3"; /**< Input that indicates a desire to return to the main menu scene without saving .*/
     // Settingsanager* settings_manager
-public:
+    static Settings* settingsInstance;
+
     Settings();
+public:
     ~Settings();
     void render() override;
     void handle_input() override;
+    static Settings* get_instance();
 };
 
 #endif

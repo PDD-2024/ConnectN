@@ -1,9 +1,13 @@
 #include <iostream>
 #include "credits.h"
 #include "menu.h"
+#include "scene_manager.h"
 
 int main(int, char**){
-    std::cout << "Hello, from ConnectN!\n";
-    Credits c = Credits();
-    c.render();
+    SceneManager* sm = SceneManager::get_instance();
+
+    sm->set_scene(Menu::get_instance());
+    sm->currentScene->render();
+    sm->currentScene->handle_input();
+    sm->currentScene->render();
 }
