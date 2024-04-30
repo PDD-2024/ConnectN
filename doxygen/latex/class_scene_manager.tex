@@ -1,0 +1,77 @@
+\doxysection{Scene\+Manager Class Reference}
+\hypertarget{class_scene_manager}{}\label{class_scene_manager}\index{SceneManager@{SceneManager}}
+
+
+Singleton class that handles game scenes.  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_manager_a93cc5b274517c589aac52f0a4a6fb4c0}{set\+\_\+scene}} (\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}scene)
+\begin{DoxyCompactList}\small\item\em Set the scene object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_manager_a901dc8edde5b9ba0da3ecfbae4bb6dbd}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_manager_a61fb6deaad8c240b54833caf36c1f19a}{current\+Scene}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that handles game scenes. 
+
+This class handles the swapping of scenes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scene_manager_a901dc8edde5b9ba0da3ecfbae4bb6dbd}\label{class_scene_manager_a901dc8edde5b9ba0da3ecfbae4bb6dbd} 
+\index{SceneManager@{SceneManager}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \texorpdfstring{$\ast$}{*} Scene\+Manager\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the instance object. 
+
+\begin{DoxyReturn}{Returns}
+Scene\+Manager\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_scene_manager_a93cc5b274517c589aac52f0a4a6fb4c0}\label{class_scene_manager_a93cc5b274517c589aac52f0a4a6fb4c0} 
+\index{SceneManager@{SceneManager}!set\_scene@{set\_scene}}
+\index{set\_scene@{set\_scene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{set\_scene()}{set\_scene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::set\+\_\+scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} \texorpdfstring{$\ast$}{*}}]{scene }\end{DoxyParamCaption})}
+
+
+
+Set the scene object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & New scene \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scene_manager_a61fb6deaad8c240b54833caf36c1f19a}\label{class_scene_manager_a61fb6deaad8c240b54833caf36c1f19a} 
+\index{SceneManager@{SceneManager}!currentScene@{currentScene}}
+\index{currentScene@{currentScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{currentScene}{currentScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}\texorpdfstring{$\ast$}{*} Scene\+Manager\+::current\+Scene}
+
+Currently displayed scene. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/scene\+\_\+manager.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/scene\+\_\+manager.\+cpp\end{DoxyCompactItemize}

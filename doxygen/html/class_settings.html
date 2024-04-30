@@ -74,12 +74,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_settings-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Settings Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class that implements the scene class to create the "settings scene".  
+<p>Singleton class that implements the scene class to create the "settings scene".  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="settings_8h_source.html">settings.h</a>&gt;</code></p>
@@ -89,53 +90,65 @@ Inheritance diagram for Settings:</div>
  <div class="center">
   <img src="class_settings.png" usemap="#Settings_map" alt=""/>
   <map id="Settings_map" name="Settings_map">
-<area href="class_scene.html" alt="Scene" shape="rect" coords="0,0,56,24"/>
+<area href="class_scene.html" title="Class that represents the visual and functional components of each scene in ConnectN...." alt="Scene" shape="rect" coords="0,0,56,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7169a6eefce79566dd07db3b1e5e967" id="r_ab7169a6eefce79566dd07db3b1e5e967"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7169a6eefce79566dd07db3b1e5e967">Settings</a> ()</td></tr>
-<tr class="separator:ab7169a6eefce79566dd07db3b1e5e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b0a4d29d4ba5a1f498d1b64c0fc09f" id="r_a80b0a4d29d4ba5a1f498d1b64c0fc09f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b0a4d29d4ba5a1f498d1b64c0fc09f">render</a> () override</td></tr>
+<tr class="memdesc:a80b0a4d29d4ba5a1f498d1b64c0fc09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method utilized to render the scene's content.  <br /></td></tr>
 <tr class="separator:a80b0a4d29d4ba5a1f498d1b64c0fc09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e51d4db10e4dc93cf10d03bb0a710bf" id="r_a2e51d4db10e4dc93cf10d03bb0a710bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e51d4db10e4dc93cf10d03bb0a710bf">handle_input</a> () override</td></tr>
+<tr class="memdesc:a2e51d4db10e4dc93cf10d03bb0a710bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method utilized to accept and handle user input after rendering the scene.  <br /></td></tr>
 <tr class="separator:a2e51d4db10e4dc93cf10d03bb0a710bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a86b6b589fef577e9a23e3440685a5c53" id="r_a86b6b589fef577e9a23e3440685a5c53"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_settings.html">Settings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86b6b589fef577e9a23e3440685a5c53">get_instance</a> ()</td></tr>
+<tr class="memdesc:a86b6b589fef577e9a23e3440685a5c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance object.  <br /></td></tr>
+<tr class="separator:a86b6b589fef577e9a23e3440685a5c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_scene"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_scene')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_scene.html">Scene</a></td></tr>
-<tr class="memitem:aedd6a190ee1363c35d023259f9ff389e inherit pub_attribs_class_scene" id="r_aedd6a190ee1363c35d023259f9ff389e"><td class="memItemLeft" align="right" valign="top">
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b></td></tr>
+<tr class="memitem:aedd6a190ee1363c35d023259f9ff389e inherit pub_attribs_class_scene" id="r_aedd6a190ee1363c35d023259f9ff389e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aedd6a190ee1363c35d023259f9ff389e">content</a></td></tr>
 <tr class="separator:aedd6a190ee1363c35d023259f9ff389e inherit pub_attribs_class_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c74507957bd64d03a04fb7e84a268fb inherit pub_attribs_class_scene" id="r_a2c74507957bd64d03a04fb7e84a268fb"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></tr>
+<tr class="memitem:a2c74507957bd64d03a04fb7e84a268fb inherit pub_attribs_class_scene" id="r_a2c74507957bd64d03a04fb7e84a268fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a2c74507957bd64d03a04fb7e84a268fb">isRendered</a></td></tr>
 <tr class="separator:a2c74507957bd64d03a04fb7e84a268fb inherit pub_attribs_class_scene"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class that implements the scene class to create the "settings scene". </p>
+<div class="textblock"><p>Singleton class that implements the scene class to create the "settings scene". </p>
 <p>Visually and functionally represents the settings scene. Utilized by the user to modify their personal application settings. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab7169a6eefce79566dd07db3b1e5e967" name="ab7169a6eefce79566dd07db3b1e5e967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7169a6eefce79566dd07db3b1e5e967">&#9670;&#160;</a></span>Settings()</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a86b6b589fef577e9a23e3440685a5c53" name="a86b6b589fef577e9a23e3440685a5c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b6b589fef577e9a23e3440685a5c53">&#9670;&#160;</a></span>get_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Settings::Settings </td>
+          <td class="memname"><a class="el" href="class_settings.html">Settings</a> * Settings::get_instance </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Constructor that configures the inital state of the class.</p>
-<p>This constructor sets the content (visual representation) of the settings scene and sets the rendered state of the scene to false. </p>
+
+<p>Get the instance object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Settings* </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2e51d4db10e4dc93cf10d03bb0a710bf" name="a2e51d4db10e4dc93cf10d03bb0a710bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e51d4db10e4dc93cf10d03bb0a710bf">&#9670;&#160;</a></span>handle_input()</h2>
 
@@ -159,9 +172,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Method utilized to accept and handle user input after rendering the scene. </p>
 
-<p>Implements <a class="el" href="class_scene.html">Scene</a>.</p>
+<p>Implements <a class="el" href="class_scene.html#ad2cea0111fbe68459a3305f7e710df77">Scene</a>.</p>
 
 </div>
 </div>
@@ -188,9 +201,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Method utilized to render the scene's content. </p>
 
-<p>Implements <a class="el" href="class_scene.html">Scene</a>.</p>
+<p>Implements <a class="el" href="class_scene.html#a823f4cd60d27932ee16f74adb0421ff6">Scene</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,103 @@
+\doxysection{Menu Class Reference}
+\hypertarget{class_menu}{}\label{class_menu}\index{Menu@{Menu}}
+
+
+Singleton class that implements scene to create the menu scene.  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_menu_adc427e240092c292e74648d25be9c912}{render}} () override
+\begin{DoxyCompactList}\small\item\em Method utilized to render the scene\textquotesingle{}s content. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_ae2747956a2f50ce7ac93168dc0536955}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em Method utilized to accept and handle user input after rendering the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_menu}{Menu}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_menu_a212965430dc0cceb9fc686940849d0d4}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_scene}{Scene}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_scene_aedd6a190ee1363c35d023259f9ff389e}{content}}
+\item 
+bool \mbox{\hyperlink{class_scene_a2c74507957bd64d03a04fb7e84a268fb}{is\+Rendered}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that implements scene to create the menu scene. 
+
+Entry scene to ConnectN. Allows the user to navigate to three different scenes\+: \doxylink{class_game}{Game}, \doxylink{class_settings}{Settings}, and \doxylink{class_credits}{Credits}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_scene}{Scene} 
+
+\doxylink{class_game}{Game} 
+
+\doxylink{class_settings}{Settings} 
+
+\doxylink{class_credits}{Credits} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_a212965430dc0cceb9fc686940849d0d4}\label{class_menu_a212965430dc0cceb9fc686940849d0d4} 
+\index{Menu@{Menu}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu}{Menu}} \texorpdfstring{$\ast$}{*} Menu\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the instance object. 
+
+\begin{DoxyReturn}{Returns}
+Menu\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_menu_ae2747956a2f50ce7ac93168dc0536955}\label{class_menu_ae2747956a2f50ce7ac93168dc0536955} 
+\index{Menu@{Menu}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily void Menu\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method utilized to accept and handle user input after rendering the scene. 
+
+
+
+Implements \mbox{\hyperlink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{Scene}}.
+
+\Hypertarget{class_menu_adc427e240092c292e74648d25be9c912}\label{class_menu_adc427e240092c292e74648d25be9c912} 
+\index{Menu@{Menu}!render@{render}}
+\index{render@{render}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Menu\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method utilized to render the scene\textquotesingle{}s content. 
+
+
+
+Implements \mbox{\hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{Scene}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/menu.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/menu.\+cpp\end{DoxyCompactItemize}

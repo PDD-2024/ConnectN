@@ -1,5 +1,14 @@
 \doxysection{Credits Class Reference}
 \hypertarget{class_credits}{}\label{class_credits}\index{Credits@{Credits}}
+
+
+Singleton class that implements the scene class to create the credits scene. Visually represents the credits scene to show of the developers of this application.  
+
+
+
+
+{\ttfamily \#include $<$credits.\+h$>$}
+
 Inheritance diagram for Credits\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,20 +19,41 @@ Inheritance diagram for Credits\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_credits_a4b87698f090a28c2e3203ad1a4021530}{render}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Method utilized to render the scene\textquotesingle{}s content. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_credits_a7354f4ba6ae40311be01d017d7eb3f21}{handle\+\_\+input}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Method utilized to accept and handle user input after rendering the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_credits}{Credits}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_credits_ab9d67baba6ff007cbd1f223dd6b6f276}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_scene}{Scene}}}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string {\bfseries content}
+std\+::string \mbox{\hyperlink{class_scene_aedd6a190ee1363c35d023259f9ff389e}{content}}
 \item 
-bool {\bfseries is\+Rendered}
+bool \mbox{\hyperlink{class_scene_a2c74507957bd64d03a04fb7e84a268fb}{is\+Rendered}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Singleton class that implements the scene class to create the credits scene. Visually represents the credits scene to show of the developers of this application. 
+
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_credits_ab9d67baba6ff007cbd1f223dd6b6f276}\label{class_credits_ab9d67baba6ff007cbd1f223dd6b6f276} 
+\index{Credits@{Credits}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!Credits@{Credits}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_credits}{Credits}} \texorpdfstring{$\ast$}{*} Credits\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the instance object. 
+
+\begin{DoxyReturn}{Returns}
+Credits\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
 \Hypertarget{class_credits_a7354f4ba6ae40311be01d017d7eb3f21}\label{class_credits_a7354f4ba6ae40311be01d017d7eb3f21} 
 \index{Credits@{Credits}!handle\_input@{handle\_input}}
 \index{handle\_input@{handle\_input}!Credits@{Credits}}
@@ -32,7 +62,11 @@ bool {\bfseries is\+Rendered}
 
 
 
-Implements \mbox{\hyperlink{class_scene}{Scene}}.
+Method utilized to accept and handle user input after rendering the scene. 
+
+
+
+Implements \mbox{\hyperlink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{Scene}}.
 
 \Hypertarget{class_credits_a4b87698f090a28c2e3203ad1a4021530}\label{class_credits_a4b87698f090a28c2e3203ad1a4021530} 
 \index{Credits@{Credits}!render@{render}}
@@ -42,7 +76,11 @@ Implements \mbox{\hyperlink{class_scene}{Scene}}.
 
 
 
-Implements \mbox{\hyperlink{class_scene}{Scene}}.
+Method utilized to render the scene\textquotesingle{}s content. 
+
+
+
+Implements \mbox{\hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{Scene}}.
 
 
 

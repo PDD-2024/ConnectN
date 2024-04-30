@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['render_0',['render',['../class_settings.html#a80b0a4d29d4ba5a1f498d1b64c0fc09f',1,'Settings']]]
+  ['check_5ffor_5fwinner_0',['check_for_winner',['../class_board.html#a843e7770c45c28285ef085beef1b63bb',1,'Board']]]
 ];

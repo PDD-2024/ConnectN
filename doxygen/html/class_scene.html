@@ -79,34 +79,42 @@ $(function() {
   <div class="headertitle"><div class="title">Scene Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that represents the visual and functional components of each scene in ConnectN. This prints its content with the <a class="el" href="#a823f4cd60d27932ee16f74adb0421ff6" title="Method utilized to render the scene&#39;s content.">render()</a> method and accepts user input with the <a class="el" href="#ad2cea0111fbe68459a3305f7e710df77" title="Method utilized to accept and handle user input after rendering the scene.">handle_input()</a> method. This class is to be overriden by derived application scenes.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="scene_8h_source.html">scene.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Scene:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_scene.png" usemap="#Scene_map" alt=""/>
   <map id="Scene_map" name="Scene_map">
-<area href="class_credits.html" alt="Credits" shape="rect" coords="0,56,56,80"/>
-<area href="class_settings.html" title="Class that implements the scene class to create the &quot;settings scene&quot;." alt="Settings" shape="rect" coords="66,56,122,80"/>
+<area href="class_credits.html" title="Singleton class that implements the scene class to create the credits scene. Visually represents the ..." alt="Credits" shape="rect" coords="0,56,56,80"/>
+<area href="class_menu.html" title="Singleton class that implements scene to create the menu scene." alt="Menu" shape="rect" coords="66,56,122,80"/>
+<area href="class_settings.html" title="Singleton class that implements the scene class to create the &quot;settings scene&quot;." alt="Settings" shape="rect" coords="132,56,188,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a823f4cd60d27932ee16f74adb0421ff6" id="r_a823f4cd60d27932ee16f74adb0421ff6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a823f4cd60d27932ee16f74adb0421ff6">render</a> ()=0</td></tr>
+<tr class="memdesc:a823f4cd60d27932ee16f74adb0421ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method utilized to render the scene's content.  <br /></td></tr>
 <tr class="separator:a823f4cd60d27932ee16f74adb0421ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2cea0111fbe68459a3305f7e710df77" id="r_ad2cea0111fbe68459a3305f7e710df77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2cea0111fbe68459a3305f7e710df77">handle_input</a> ()=0</td></tr>
+<tr class="memdesc:ad2cea0111fbe68459a3305f7e710df77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method utilized to accept and handle user input after rendering the scene.  <br /></td></tr>
 <tr class="separator:ad2cea0111fbe68459a3305f7e710df77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aedd6a190ee1363c35d023259f9ff389e" id="r_aedd6a190ee1363c35d023259f9ff389e"><td class="memItemLeft" align="right" valign="top"><a id="aedd6a190ee1363c35d023259f9ff389e" name="aedd6a190ee1363c35d023259f9ff389e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>content</b></td></tr>
+<tr class="memitem:aedd6a190ee1363c35d023259f9ff389e" id="r_aedd6a190ee1363c35d023259f9ff389e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd6a190ee1363c35d023259f9ff389e">content</a></td></tr>
 <tr class="separator:aedd6a190ee1363c35d023259f9ff389e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c74507957bd64d03a04fb7e84a268fb" id="r_a2c74507957bd64d03a04fb7e84a268fb"><td class="memItemLeft" align="right" valign="top"><a id="a2c74507957bd64d03a04fb7e84a268fb" name="a2c74507957bd64d03a04fb7e84a268fb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></tr>
+<tr class="memitem:a2c74507957bd64d03a04fb7e84a268fb" id="r_a2c74507957bd64d03a04fb7e84a268fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c74507957bd64d03a04fb7e84a268fb">isRendered</a></td></tr>
 <tr class="separator:a2c74507957bd64d03a04fb7e84a268fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that represents the visual and functional components of each scene in ConnectN. This prints its content with the <a class="el" href="#a823f4cd60d27932ee16f74adb0421ff6" title="Method utilized to render the scene&#39;s content.">render()</a> method and accepts user input with the <a class="el" href="#ad2cea0111fbe68459a3305f7e710df77" title="Method utilized to accept and handle user input after rendering the scene.">handle_input()</a> method. This class is to be overriden by derived application scenes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad2cea0111fbe68459a3305f7e710df77" name="ad2cea0111fbe68459a3305f7e710df77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2cea0111fbe68459a3305f7e710df77">&#9670;&#160;</a></span>handle_input()</h2>
 
@@ -130,7 +138,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_settings.html#a2e51d4db10e4dc93cf10d03bb0a710bf">Settings</a>.</p>
+<p>Method utilized to accept and handle user input after rendering the scene. </p>
+
+<p>Implemented in <a class="el" href="class_credits.html#a7354f4ba6ae40311be01d017d7eb3f21">Credits</a>, <a class="el" href="class_menu.html#ae2747956a2f50ce7ac93168dc0536955">Menu</a>, and <a class="el" href="class_settings.html#a2e51d4db10e4dc93cf10d03bb0a710bf">Settings</a>.</p>
 
 </div>
 </div>
@@ -157,7 +167,40 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRendered</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_settings.html#a80b0a4d29d4ba5a1f498d1b64c0fc09f">Settings</a>.</p>
+<p>Method utilized to render the scene's content. </p>
+
+<p>Implemented in <a class="el" href="class_credits.html#a4b87698f090a28c2e3203ad1a4021530">Credits</a>, <a class="el" href="class_menu.html#adc427e240092c292e74648d25be9c912">Menu</a>, and <a class="el" href="class_settings.html#a80b0a4d29d4ba5a1f498d1b64c0fc09f">Settings</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aedd6a190ee1363c35d023259f9ff389e" name="aedd6a190ee1363c35d023259f9ff389e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd6a190ee1363c35d023259f9ff389e">&#9670;&#160;</a></span>content</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Scene::content</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Content that visually represents the scene. To be configured in derived class constructors. </p>
+
+</div>
+</div>
+<a id="a2c74507957bd64d03a04fb7e84a268fb" name="a2c74507957bd64d03a04fb7e84a268fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c74507957bd64d03a04fb7e84a268fb">&#9670;&#160;</a></span>isRendered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::isRendered</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Boolean to represent whether a scene is being rendered. </p>
 
 </div>
 </div>

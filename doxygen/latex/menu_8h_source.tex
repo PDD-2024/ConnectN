@@ -1,0 +1,29 @@
+\doxysection{menu.\+h}
+\hypertarget{menu_8h_source}{}\label{menu_8h_source}\index{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/menu.h@{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/menu.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MENU}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MENU}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}scene.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu}{Menu}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_scene}{Scene}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ PLAY\_GAME\ =\ \textcolor{stringliteral}{"{}1"{}};}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ CHANGE\_SETTINGS\ =\ \textcolor{stringliteral}{"{}2"{}};}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ VIEW\_CREDITS\ =\ \textcolor{stringliteral}{"{}3"{}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_menu}{Menu}}*\ menuInstance;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_menu}{Menu}}();}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_menu}{\string~Menu}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_adc427e240092c292e74648d25be9c912}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_ae2747956a2f50ce7ac93168dc0536955}{handle\_input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_menu}{Menu}}*\ \mbox{\hyperlink{class_menu_a212965430dc0cceb9fc686940849d0d4}{get\_instance}}();}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

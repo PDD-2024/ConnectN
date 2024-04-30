@@ -1,0 +1,107 @@
+\doxysection{Board Class Reference}
+\hypertarget{class_board}{}\label{class_board}\index{Board@{Board}}
+
+
+Class that represents the playable ConnectN board.  
+
+
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb} 
+{\bfseries Board} ()
+\begin{DoxyCompactList}\small\item\em Default constructor to make a new \doxylink{class_board}{Board}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_afdd3bed1f5a7775d6d52574457aa7487}{Board}} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_board}{Board} with \textquotesingle{}w\textquotesingle{} width and \textquotesingle{}h\textquotesingle{} height. \end{DoxyCompactList}\item 
+\Hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}\label{class_board_af73f45730119a1fd8f6670f53f959e68} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Board} ()
+\begin{DoxyCompactList}\small\item\em Cleans up the \doxylink{class_board}{Board} and associated Pieces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_aedc3decbea46a25c8338041bc1d29990}{place\+\_\+piece}} (\mbox{\hyperlink{class_piece}{Piece}} \texorpdfstring{$\ast$}{*}piece)
+\begin{DoxyCompactList}\small\item\em Places a piece on the board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_board_a843e7770c45c28285ef085beef1b63bb}{check\+\_\+for\+\_\+winner}} ()
+\begin{DoxyCompactList}\small\item\em Checks if a player has won the game. \end{DoxyCompactList}\item 
+\Hypertarget{class_board_a9e7818d31e61b6a3836a312695613ec4}\label{class_board_a9e7818d31e61b6a3836a312695613ec4} 
+void {\bfseries print\+\_\+board} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the playable ConnectN board. 
+
+This class utilizes a 2D array composed of the \doxylink{class_piece}{Piece} class to represent the playing board\+: \doxylink{class_board}{Board} position schema\+: (0,0) (1,0) (2,0) (3,0) ... (0,1) (1,1) (2,1) (3,1) (0,2) (1,2) (2,2) (3,2) ... ...
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_piece}{Piece} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_board_afdd3bed1f5a7775d6d52574457aa7487}\label{class_board_afdd3bed1f5a7775d6d52574457aa7487} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_board}{Board} with \textquotesingle{}w\textquotesingle{} width and \textquotesingle{}h\textquotesingle{} height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Width of the board. \\
+\hline
+{\em h} & Height of the board. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_board_a843e7770c45c28285ef085beef1b63bb}\label{class_board_a843e7770c45c28285ef085beef1b63bb} 
+\index{Board@{Board}!check\_for\_winner@{check\_for\_winner}}
+\index{check\_for\_winner@{check\_for\_winner}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{check\_for\_winner()}{check\_for\_winner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} Board\+::check\+\_\+for\+\_\+winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if a player has won the game. 
+
+Checks if there is a sequence of N similar pieces and returns the user associated with those pieces.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_piece}{Piece} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player} that has won the game (Player\texorpdfstring{$\ast$}{*}) or NULL. 
+\end{DoxyReturn}
+\Hypertarget{class_board_aedc3decbea46a25c8338041bc1d29990}\label{class_board_aedc3decbea46a25c8338041bc1d29990} 
+\index{Board@{Board}!place\_piece@{place\_piece}}
+\index{place\_piece@{place\_piece}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{place\_piece()}{place\_piece()}}
+{\footnotesize\ttfamily void Board\+::place\+\_\+piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}} \texorpdfstring{$\ast$}{*}}]{piece }\end{DoxyParamCaption})}
+
+
+
+Places a piece on the board. 
+
+\begin{DoxyNote}{Note}
+The piece at the current piece-\/to-\/be-\/placed\textquotesingle{}s position will be overwritten. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_piece}{Piece} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & \doxylink{class_piece}{Piece} to be placed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/board.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/board.\+cpp\end{DoxyCompactItemize}

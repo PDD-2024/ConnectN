@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['connectn_0',['ConnectN',['../md__2_users_2joeymarkley_2_documents_2_visual_01_studio_01_code_2_c_09_09_23081_c_s_c_i_2_connect_n_2_r_e_a_d_m_e.html',1,'']]],
-  ['credits_1',['Credits',['../class_credits.html',1,'']]]
+  ['board_0',['Board',['../class_board.html',1,'Board'],['../class_board.html#a9ee491d4fea680cf69b033374a9fdfcb',1,'Board::Board()'],['../class_board.html#afdd3bed1f5a7775d6d52574457aa7487',1,'Board::Board(int w, int h)']]]
 ];

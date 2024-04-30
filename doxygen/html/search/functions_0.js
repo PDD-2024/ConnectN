@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handle_5finput_0',['handle_input',['../class_settings.html#a2e51d4db10e4dc93cf10d03bb0a710bf',1,'Settings']]]
+  ['board_0',['Board',['../class_board.html#a9ee491d4fea680cf69b033374a9fdfcb',1,'Board::Board()'],['../class_board.html#afdd3bed1f5a7775d6d52574457aa7487',1,'Board::Board(int w, int h)']]]
 ];

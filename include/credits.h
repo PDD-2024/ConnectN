@@ -4,7 +4,7 @@
 #include <iostream>
 #include "scene.h"
 
-/** @brief Class that implements the scene class to create the credits scene.
+/** @brief Singleton class that implements the scene class to create the credits scene.
  * Visually represents the credits scene to show of the developers of this application.
  */
 class Credits : public Scene {
@@ -18,6 +18,11 @@ public:
     ~Credits();
     void render() override;
     void handle_input() override;
+    /**
+     * @brief Get the instance object
+     * 
+     * @return Credits*
+     */
     static Credits* get_instance();
 };
 

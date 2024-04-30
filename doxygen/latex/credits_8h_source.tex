@@ -8,16 +8,20 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}scene.h"{}}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_credits}{Credits}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_scene}{Scene}}\ \{}
-\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00009\ \ \ \ \ std::string\ RETURN\_TO\_MENU\ =\ \textcolor{stringliteral}{"{}1"{}};}
-\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_credits}{Credits}}();}
-\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_credits}{\string~Credits}}();}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ render()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_input()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00015\ \};}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_credits}{Credits}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_scene}{Scene}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ RETURN\_TO\_MENU\ =\ \textcolor{stringliteral}{"{}1"{}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_credits}{Credits}}*\ creditsInstance;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_credits}{Credits}}();}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_credits}{\string~Credits}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_credits_a4b87698f090a28c2e3203ad1a4021530}{render}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_credits_a7354f4ba6ae40311be01d017d7eb3f21}{handle\_input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_credits}{Credits}}*\ \mbox{\hyperlink{class_credits_ab9d67baba6ff007cbd1f223dd6b6f276}{get\_instance}}();}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

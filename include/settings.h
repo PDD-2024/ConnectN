@@ -4,7 +4,7 @@
 #include <iostream>
 #include "scene.h"
 
-/** @brief Class that implements the scene class to create the "settings scene".
+/** @brief Singleton class that implements the scene class to create the "settings scene".
  *
  * Visually and functionally represents the settings scene. Utilized by the user to modify their personal application settings.
  */
@@ -21,6 +21,12 @@ public:
     ~Settings();
     void render() override;
     void handle_input() override;
+
+    /**
+     * @brief Get the instance object
+     * 
+     * @return Settings*
+     */
     static Settings* get_instance();
 };
 
