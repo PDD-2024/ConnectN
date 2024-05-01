@@ -28,12 +28,11 @@ void Menu::handle_input() {
         getline(std::cin, input);
         if (input == PLAY_GAME) {
             isValidInput = true;
-            // sm.set_scene(Menu::get_instance());
+            sm->set_scene(Game::get_instance());
             std::cout << "Play game" << std::endl;
         } else if (input == CHANGE_SETTINGS) {
             isValidInput = true;
             sm->set_scene(Settings::get_instance());
-            // TODO: use SceneManager to switch scene to settings
             std::cout << "Change settings" << std::endl;
         } else if (input == VIEW_CREDITS) {
             isValidInput = true;

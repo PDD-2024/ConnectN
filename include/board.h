@@ -20,15 +20,18 @@
 class Board {
 private:
     Piece ***pieces;
+    int n;
     int width;
     int height;
 public:
     Board();
-    Board(int w, int h);
+    Board(int n);
     ~Board();
-    void place_piece(Piece *piece);
+    bool place_piece(int column, Player *player);
     Player *check_for_winner();
     void print_board();
+    int get_n();
+    int get_width();
 };
 
 #endif

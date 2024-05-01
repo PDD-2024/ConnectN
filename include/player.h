@@ -19,6 +19,7 @@ public:
     void set_name(std::string n);
     void set_color(Color c);
     Color get_color();
+    std::string get_name();
 };
 
 #endif

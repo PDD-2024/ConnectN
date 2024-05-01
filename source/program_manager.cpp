@@ -20,6 +20,7 @@ void ProgramManager::init() {
     Settings* settingsScene = Settings::get_instance();
     Credits* creditsScene = Credits::get_instance();
     Menu* menuScene = Menu::get_instance();
+    Game* gameScene = Game::get_instance();
 
     this->sceneManager->set_scene(menuScene);
 

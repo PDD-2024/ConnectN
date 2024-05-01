@@ -29,3 +29,11 @@ void Player::set_color(Color c) {
 Color Player::get_color() {
     return this->color;
 }
+
+/**
+ * @brief Gets the color associated with the player.
+ * @return Name of the player.
+ */
+std::string Player::get_name() {
+    return this->name;
+}
