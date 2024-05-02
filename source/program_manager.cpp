@@ -16,7 +16,6 @@ ProgramManager* ProgramManager::get_instance() {
 }
 
 void ProgramManager::init() {
-    // Game* gameScene = Game::get_instance();
     Settings* settingsScene = Settings::get_instance();
     Credits* creditsScene = Credits::get_instance();
     Menu* menuScene = Menu::get_instance();

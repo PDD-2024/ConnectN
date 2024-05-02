@@ -29,7 +29,8 @@ public:
     ~Board();
     bool place_piece(int column, Player *player);
     Player *check_for_winner();
-    void print_board();
+    bool check_if_full();
+    std::string board_to_string();
     int get_n();
     int get_width();
 };

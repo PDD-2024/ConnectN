@@ -29,15 +29,13 @@ void Menu::handle_input() {
         if (input == PLAY_GAME) {
             isValidInput = true;
             sm->set_scene(Game::get_instance());
-            std::cout << "Play game" << std::endl;
+
         } else if (input == CHANGE_SETTINGS) {
             isValidInput = true;
             sm->set_scene(Settings::get_instance());
-            std::cout << "Change settings" << std::endl;
         } else if (input == VIEW_CREDITS) {
             isValidInput = true;
             sm->set_scene(Credits::get_instance());
-            std::cout << "View credits" << std::endl;
         } else {
             // TODO: handle error
             std::cout << "Invalid input!" << std::endl;

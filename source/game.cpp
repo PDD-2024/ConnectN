@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <memory>
+#include "scene_manager.h"
+#include "menu.h"
 #include "game.h"
 
 /**
@@ -11,6 +13,7 @@
  */
 Game::Game() {
     board = NULL;
+    winner = NULL;
     player1 = new Player();
     player1->set_color(Red);
 
@@ -18,7 +21,7 @@ Game::Game() {
     player2->set_color(Black);
     
     currentState = getPlayer1Name;
-    this->playsNext = this->player1;
+    playsNext = player1;
 }
 
 /**
@@ -72,14 +75,20 @@ int Game::player_turn(int column) {
  */
 void Game::render() {
     if (currentState == getPlayer1Name) {
-        content = std::string("\nEnter player1 name:");
+        content = std::string("\n\n\nGame - Enter the first player's name:\n\n");
     } else if (currentState == getPlayer2Name) {
-        content = std::string("\nEnter player2 name:");
+        content = std::string("\n\n\nGame - Enter the second player's name:\n\n");
     } else if (currentState == getBoardSize) {
-        content = std::string("\nEnter N (the number of tiles to connect in order to win):");
+        content = std::string("\n\n\nGame - Enter N (the number of tiles to connect in order to win):\n\n");
     } else if (currentState == playGame) { 
-        board->print_board();
-        content = std::string("\nIt's ") + std::string(playsNext->get_name()) + std::string("'s turn. Enter the number of the column where you would like to play:");
+        std::string board_string = board->board_to_string();
+        content = std::string("\n\n\nGame \n") + board_string + std::string(" It's ") + std::string(playsNext->get_name()) + std::string("'s turn. Enter the number of the column where you would like to play:\n\n");
+    } else if (currentState == gameOver) {
+        if (winner == NULL) {
+            content = "\n\n\nGame\n" + board->board_to_string() + std::string("\n\n\nGame - The game ended in a tie. Choose an option:\n\t(") + PLAY_GAME + std::string(") Play again\n\t(") + RETURN_TO_MENU + std::string(") Return to menu\n\t(") + EXIT + std::string(") Exit\n\n");
+        } else {
+            content = "\n\n\nGame\n" + board->board_to_string() + std::string("\n\n\nGame - The winner is ") + winner->get_name() + std::string("! Choose an option:\n\t(") + PLAY_GAME + std::string(") Play again\n\t(") + RETURN_TO_MENU + std::string(") Return to menu\n\t(") + EXIT + std::string(") Exit\n\n");
+        }
     } else {
         // State has not been properly initialized. Print error message.
         content = std::string("Error: illegal game state!");
@@ -110,7 +119,7 @@ void Game::handle_input() {
         
         // If the board size is too small, prompt the user to enter a new value and recursively call handle_input
         if (board_size < 1){
-            std::cout << "\nThat board size is invalid. Please enter a number greater than 1:" << std::endl;
+            std::cout << "\n\n\nGame - That board size is invalid. Please enter a number greater than 1:\n\n" << std::endl;
             handle_input();
         } else {
             board = new Board(board_size);
@@ -124,19 +133,36 @@ void Game::handle_input() {
         int column = atoi(input.c_str());
         int success = player_turn(column);
 
-        // If the column was out of bounds, prompt the user to enter a new value and recursively call handle_input
-        if (success == -1) {
+        if (success == -1) {// If the column was out of bounds, prompt the user to enter a new value and recursively call handle_input
             int max_col_val = this->board->get_width() - 1;
-            std::cout << "\nThat column value is invalid. Please enter a number between 0 and " << max_col_val << std::endl;
+            std::cout << "\n\n\nGame - That column value is invalid. Please enter a number between 0 and " << max_col_val << ".\n\n" << std::endl;
             handle_input();
-        } else if (success == 1) {
-            std::cout << "\nThat column is full. Please choose another column:" << std::endl;
+        } else if (success == 1) { // If the column is already full, prompt the user to enter a new value and recursively call handle_input
+            std::cout << "\n\n\nGame - That column is full. Please choose another column:\n\n" << std::endl;
             handle_input();
+        } else {// If the operation was successful, check if the game is over
+            check_for_game_over();
         }
 
+    } else if (currentState == gameOver) {
+        // Set up for the next Game
+        delete board;
+        board = NULL;
+        winner = NULL;
+        currentState = getPlayer1Name;
+        playsNext = player1;
+        if (input == RETURN_TO_MENU) { // Return to Menu
+            SceneManager* sm = SceneManager::get_instance();
+            sm->set_scene(Menu::get_instance());
+        } else if (input == EXIT) {
+            // TODO: do this a little nicer, maybe return control to ProgramManager
+            exit(0);
+        } else if (input != PLAY_GAME) {
+            std::cout << "\n\nGame - Invalid input. Try again." << std::endl;
+        }
     } else {
         // State has not been properly initialized. Print error message and exit.
-        std::cout << "'nError: illegal game state!" << std::endl;
+        std::cout << "\nGame - Error: illegal game state!" << std::endl;
         exit(1);
     }
 }
@@ -163,4 +189,17 @@ Game* Game::get_instance() {
     }
 
     return s_game_instance;
+}
+
+void Game::check_for_game_over() {
+    bool full = board->check_if_full();
+    if (full) {
+        currentState = gameOver;
+    } else {
+        Player *won = this->board->check_for_winner();
+        if (won != NULL) {
+            currentState = gameOver;
+            winner = won;
+        }
+    }
 }

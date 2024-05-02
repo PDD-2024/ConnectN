@@ -8,12 +8,7 @@
 
 
 int main(int, char**){
-    // SceneManager* sm = SceneManager::get_instance();
-
-    // sm->set_scene(Menu::get_instance());
-    // sm->currentScene->render();
-    // sm->currentScene->handle_input();
-    // sm->currentScene->render();
     ProgramManager *pm = ProgramManager::get_instance();
     pm->init();
+    
 }

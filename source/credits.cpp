@@ -26,7 +26,6 @@ void Credits::handle_input() {
         getline(std::cin, input);
         if (input == RETURN_TO_MENU) {
             isValidInput = true;
-            std::cout << "Return to menu!" << std::endl;
             sm->set_scene(Menu::get_instance());
         } else {
             std::cout << "Invalid input! Please enter a valid input: " << std::endl;
