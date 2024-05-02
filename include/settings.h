@@ -13,7 +13,6 @@ private:
     std::string CHANGE_LANGUAGE = "1"; /**< Input that indicates a desire to change the application's language. */
     std::string SAVE_AND_RETURN_TO_MENU = "2"; /**< Input that indicates a desire to save the current settings and return to the main menu scene. */
     std::string RETURN_TO_MENU = "3"; /**< Input that indicates a desire to return to the main menu scene without saving .*/
-    // Settingsanager* settings_manager
     static Settings* settingsInstance;
 
     Settings();

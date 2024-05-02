@@ -3,12 +3,13 @@
 #include "settings.h"
 #include "menu.h"
 #include "scene_manager.h"
+#include "settings_manager.h"
 
 Settings::Settings() {
-    // language = settings_manager.language.to_string()
-    std::string language = "English";
+    SettingsManager *stm = SettingsManager::get_instance();
+    std::string language = stm->get_language();
     isRendered = false;
-    content = std::string("\n\n\nSettings - Choose an option\n\t(") + CHANGE_LANGUAGE + std::string(") Change Language (current: English)\n\t(") + SAVE_AND_RETURN_TO_MENU + std::string(") Save Settings and Return to Menu \n\t(") + RETURN_TO_MENU + std::string(") Return to Menu\n\n");
+    content = std::string("\n\n\nSettings - Choose an option\n\t(") + CHANGE_LANGUAGE + std::string(") Change Language (current:" + language + ")\n\t(") + SAVE_AND_RETURN_TO_MENU + std::string(") Save Settings and Return to Menu \n\t(") + RETURN_TO_MENU + std::string(") Return to Menu\n\n");
 }
 
 /// <inheritdoc />
@@ -27,13 +28,15 @@ void Settings::handle_input() {
         getline(std::cin, input);
         if (input == CHANGE_LANGUAGE) {
             isValidInput = true;
-            content = "Enter: (1) to switch language to English\t(2) to switch language to Spanish";
-            // TODO: use settings manager to update settings
+            //content = "Enter: (1) to switch language to English\t(2) to switch language to Spanish";
+            SettingsManager *stm = SettingsManager::get_instance();
+            stm->change_settings();
         } else if (input == SAVE_AND_RETURN_TO_MENU) {
             isValidInput = true;
 
             sm->set_scene(Menu::get_instance());
-            // TODO: write updated settings to settings file
+            SettingsManager *stm = SettingsManager::get_instance();
+            stm->save_settings();
         } else if (input == RETURN_TO_MENU) {
             isValidInput = true;
 
