@@ -5,6 +5,8 @@ SettingsManager::SettingsManager() {
     retrieve_settings();
 }
 
+/** Writes the user's current settings to the settings file.
+ */
 void SettingsManager::save_settings() {
     std::ofstream file;
     file.open(settings_file_path);
@@ -23,6 +25,8 @@ void SettingsManager::save_settings() {
     }
 }
 
+/** @brief Retrieves the user's currently configured settings.
+ */
 void SettingsManager::retrieve_settings() {
     // Read in the language settings from the file
     std::ifstream file;
@@ -49,6 +53,8 @@ void SettingsManager::retrieve_settings() {
     }
 }
 
+/** @brief Toggles ConnectN's language between Spanish and English.
+ */
 void SettingsManager::change_settings() {
     if (language == English) {
         language = Spanish;
@@ -57,6 +63,8 @@ void SettingsManager::change_settings() {
     }
 }
 
+/** @brief Retrieves the currently configured language.
+ */
 std::string SettingsManager::get_language() {
     if (language == English) {
         return std::string("English");

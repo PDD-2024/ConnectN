@@ -84,7 +84,38 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">piece.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PIECE</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PIECE</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;player.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;position.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;color.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_piece.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_piece.html">Piece</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="struct_position.html">Position</a> position;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_player.html">Player</a> *player;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_piece.html#ac57de5803bbad829b143bc7268267dc1">Piece</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_piece.html#ac57de5803bbad829b143bc7268267dc1">Piece</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code hl_class" href="class_player.html">Player</a> *p);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_piece.html">~Piece</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_piece.html#a2e5f3a12d5677088cb4573c926906e34">set_position</a>(<a class="code hl_struct" href="struct_position.html">Position</a> new_position);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="struct_position.html">Position</a> <a class="code hl_function" href="class_piece.html#ae33d4ae0e13b1ce151c310292fba825a">get_position</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_player.html">Player</a> *<a class="code hl_function" href="class_piece.html#a4afc5ca405765a9c09ea635d77236578">get_player</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Class to represent a playable piece in ConnectN.</div><div class="ttdef"><b>Definition</b> piece.h:18</div></div>
+<div class="ttc" id="aclass_piece_html_a2e5f3a12d5677088cb4573c926906e34"><div class="ttname"><a href="class_piece.html#a2e5f3a12d5677088cb4573c926906e34">Piece::set_position</a></div><div class="ttdeci">void set_position(Position new_position)</div><div class="ttdoc">Sets the position of the piece object.</div><div class="ttdef"><b>Definition</b> piece.cpp:32</div></div>
+<div class="ttc" id="aclass_piece_html_a4afc5ca405765a9c09ea635d77236578"><div class="ttname"><a href="class_piece.html#a4afc5ca405765a9c09ea635d77236578">Piece::get_player</a></div><div class="ttdeci">Player * get_player()</div><div class="ttdoc">Gets the player associated with the piece object.</div><div class="ttdef"><b>Definition</b> piece.cpp:50</div></div>
+<div class="ttc" id="aclass_piece_html_ac57de5803bbad829b143bc7268267dc1"><div class="ttname"><a href="class_piece.html#ac57de5803bbad829b143bc7268267dc1">Piece::Piece</a></div><div class="ttdeci">Piece()</div><div class="ttdoc">Default constructor to create a new piece object.</div><div class="ttdef"><b>Definition</b> piece.cpp:11</div></div>
+<div class="ttc" id="aclass_piece_html_ae33d4ae0e13b1ce151c310292fba825a"><div class="ttname"><a href="class_piece.html#ae33d4ae0e13b1ce151c310292fba825a">Piece::get_position</a></div><div class="ttdeci">Position get_position()</div><div class="ttdoc">Gets the position of the piece object.</div><div class="ttdef"><b>Definition</b> piece.cpp:41</div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Class that represents a player in ConnectN. A player has two components: a name and color.</div><div class="ttdef"><b>Definition</b> player.h:12</div></div>
+<div class="ttc" id="astruct_position_html"><div class="ttname"><a href="struct_position.html">Position</a></div><div class="ttdoc">Represents the (x, y) position of a playable piece.</div><div class="ttdef"><b>Definition</b> position.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0

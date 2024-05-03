@@ -1,0 +1,30 @@
+\doxysection{settings\+\_\+manager.\+h}
+\hypertarget{settings__manager_8h_source}{}\label{settings__manager_8h_source}\index{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/settings\_manager.h@{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/settings\_manager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SETTINGS\_MANAGER}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SETTINGS\_MANAGER}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}settings.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}language.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_settings_manager}{SettingsManager}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ Language\ language;}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ settings\_file\_path\ =\ \textcolor{stringliteral}{"{}settings.txt"{}};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_settings_manager}{SettingsManager}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_settings_manager}{SettingsManager}}*\ settingsManagerInstance;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_settings_manager}{\string~SettingsManager}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_settings_manager}{SettingsManager}}*\ \mbox{\hyperlink{class_settings_manager_a0c35152c8581652f4ffd1a09cff48b99}{get\_instance}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_manager_abc4d9a299ec27c189175c2d323c88b16}{change\_settings}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_manager_afd1ead9220786dd832d40a7a4e9695f3}{save\_settings}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_settings_manager_a415279e88f7bbbc497d9e01a6327c72b}{retrieve\_settings}}();}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{class_settings_manager_aedeede22fbbfc563a66c668074ca82e3}{get\_language}}();}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

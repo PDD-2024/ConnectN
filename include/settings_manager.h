@@ -5,6 +5,9 @@
 #include "language.h"
 #include <iostream>
 
+/** @brief Class that handles configuring settings. This class retrieves, changes, and writes updated settings to the settings file.
+ *
+ */
 class SettingsManager {
 private:
     Language language;
@@ -14,6 +17,8 @@ private:
     static SettingsManager* settingsManagerInstance;
 public:
     ~SettingsManager();
+    /** @brief Retrieves the settings manager singleton instance.
+     */
     static SettingsManager* get_instance();
     void change_settings();
     void save_settings();

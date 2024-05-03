@@ -18,19 +18,23 @@ Inheritance diagram for Settings\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_settings_ab7169a6eefce79566dd07db3b1e5e967}{Settings}} ()
-\item 
 void \mbox{\hyperlink{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f}{render}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Method utilized to render the scene\textquotesingle{}s content. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em Method utilized to accept and handle user input after rendering the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_settings_a86b6b589fef577e9a23e3440685a5c53}\label{class_settings_a86b6b589fef577e9a23e3440685a5c53} 
+static \mbox{\hyperlink{class_settings}{Settings}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+instance} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_scene}{Scene}}}
 \begin{DoxyCompactItemize}
 \item 
-std\+::string {\bfseries content}
+std\+::string \mbox{\hyperlink{class_scene_aedd6a190ee1363c35d023259f9ff389e}{content}}
 \item 
-bool {\bfseries is\+Rendered}
+bool \mbox{\hyperlink{class_scene_a2c74507957bd64d03a04fb7e84a268fb}{is\+Rendered}}
 \end{DoxyCompactItemize}
 
 
@@ -38,17 +42,6 @@ bool {\bfseries is\+Rendered}
 Class that implements the scene class to create the "{}settings scene"{}. 
 
 Visually and functionally represents the settings scene. Utilized by the user to modify their personal application settings. 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_settings_ab7169a6eefce79566dd07db3b1e5e967}\label{class_settings_ab7169a6eefce79566dd07db3b1e5e967} 
-\index{Settings@{Settings}!Settings@{Settings}}
-\index{Settings@{Settings}!Settings@{Settings}}
-\doxysubsubsection{\texorpdfstring{Settings()}{Settings()}}
-{\footnotesize\ttfamily Settings\+::\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Constructor that configures the inital state of the class.
-
-This constructor sets the content (visual representation) of the settings scene and sets the rendered state of the scene to false. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf}\label{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf} 
@@ -59,11 +52,11 @@ This constructor sets the content (visual representation) of the settings scene 
 
 
 
+Method utilized to accept and handle user input after rendering the scene. 
 
 
 
-
-Implements \mbox{\hyperlink{class_scene}{Scene}}.
+Implements \mbox{\hyperlink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{Scene}}.
 
 \Hypertarget{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f}\label{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f} 
 \index{Settings@{Settings}!render@{render}}
@@ -73,11 +66,11 @@ Implements \mbox{\hyperlink{class_scene}{Scene}}.
 
 
 
+Method utilized to render the scene\textquotesingle{}s content. 
 
 
 
-
-Implements \mbox{\hyperlink{class_scene}{Scene}}.
+Implements \mbox{\hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{Scene}}.
 
 
 

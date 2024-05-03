@@ -1,0 +1,49 @@
+\doxysection{Settings\+Manager Class Reference}
+\hypertarget{class_settings_manager}{}\label{class_settings_manager}\index{SettingsManager@{SettingsManager}}
+
+
+Class that handles configuring settings. This class retrieves, changes, and writes updated settings to the settings file.  
+
+
+
+
+{\ttfamily \#include $<$settings\+\_\+manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_settings_manager_abc4d9a299ec27c189175c2d323c88b16}\label{class_settings_manager_abc4d9a299ec27c189175c2d323c88b16} 
+void {\bfseries change\+\_\+settings} ()
+\begin{DoxyCompactList}\small\item\em Toggles ConnectN\textquotesingle{}s language between Spanish and English. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_settings_manager_afd1ead9220786dd832d40a7a4e9695f3}{save\+\_\+settings}} ()
+\item 
+\Hypertarget{class_settings_manager_a415279e88f7bbbc497d9e01a6327c72b}\label{class_settings_manager_a415279e88f7bbbc497d9e01a6327c72b} 
+void {\bfseries retrieve\+\_\+settings} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s currently configured settings. \end{DoxyCompactList}\item 
+\Hypertarget{class_settings_manager_aedeede22fbbfc563a66c668074ca82e3}\label{class_settings_manager_aedeede22fbbfc563a66c668074ca82e3} 
+std\+::string {\bfseries get\+\_\+language} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the currently configured language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_settings_manager_a0c35152c8581652f4ffd1a09cff48b99}\label{class_settings_manager_a0c35152c8581652f4ffd1a09cff48b99} 
+static \mbox{\hyperlink{class_settings_manager}{Settings\+Manager}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+instance} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the settings manager singleton instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles configuring settings. This class retrieves, changes, and writes updated settings to the settings file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_settings_manager_afd1ead9220786dd832d40a7a4e9695f3}\label{class_settings_manager_afd1ead9220786dd832d40a7a4e9695f3} 
+\index{SettingsManager@{SettingsManager}!save\_settings@{save\_settings}}
+\index{save\_settings@{save\_settings}!SettingsManager@{SettingsManager}}
+\doxysubsubsection{\texorpdfstring{save\_settings()}{save\_settings()}}
+{\footnotesize\ttfamily void Settings\+Manager\+::save\+\_\+settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Writes the user\textquotesingle{}s current settings to the settings file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/settings\+\_\+manager.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/settings\+\_\+manager.\+cpp\end{DoxyCompactItemize}

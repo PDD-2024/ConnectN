@@ -9,7 +9,7 @@
 Menu::Menu() {
     isRendered = false;
     // TODO: assign based off of language set in settings
-    content = std::string("\n\n\nMenu - Choose an option\n\t(") + PLAY_GAME + std::string(") Play Game\n\t(") + CHANGE_SETTINGS + std::string(") Change Settings\n\t(") + VIEW_CREDITS + std::string(") View Credits\n\n");
+    content = std::string("\n\n\nMenu - Choose an option\n\t(") + PLAY_GAME + std::string(") Play Game\n\t(") + CHANGE_SETTINGS + std::string(") Change Settings\n\t(") + VIEW_CREDITS + std::string(") View Credits\n\t(") + EXIT + std::string(") Exit\n\n");
 }
 
 /// <inheritdoc />
@@ -36,6 +36,9 @@ void Menu::handle_input() {
         } else if (input == VIEW_CREDITS) {
             isValidInput = true;
             sm->set_scene(Credits::get_instance());
+        }  else if (input == EXIT) {
+            // TODO: do this a little nicer, maybe return control to ProgramManager
+            exit(0);
         } else {
             // TODO: handle error
             std::cout << "Invalid input!" << std::endl;

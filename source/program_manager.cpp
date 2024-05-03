@@ -2,7 +2,6 @@
 
 ProgramManager::ProgramManager() {
     this->sceneManager = SceneManager::get_instance();
-    // TODO :: Initialize settings manager
 }
 
 ProgramManager* ProgramManager::programManagerInstance = nullptr;
