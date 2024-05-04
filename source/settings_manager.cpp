@@ -91,7 +91,6 @@ SettingsManager* SettingsManager::get_instance() {
         settingsManagerInstance = new SettingsManager();
     }
     
-    settingsManagerInstance->retrieve_settings();
     return settingsManagerInstance;
 }
 

@@ -132,9 +132,9 @@ void integration_tests() {
 
     // Settings
     Settings *s = Settings::get_instance();
-    string l1 = SettingsManager::get_instance()->get_language();
+    string l1 = SettingsManager::get_instance()->get_language_str();
     s->handle_input();
-    string l2 = SettingsManager::get_instance()->get_language();
+    string l2 = SettingsManager::get_instance()->get_language_str();
     assert(l1 != l2);
     sm->currentScene = s;
     s->handle_input();
@@ -146,11 +146,11 @@ void integration_tests() {
     // Settings manager
     SettingsManager *stm = SettingsManager::get_instance();
     stm->retrieve_settings();
-    string currentLanguage = stm->get_language();
+    Language currentLanguage = stm->get_language();
     stm->change_settings();
     stm->save_settings();
     stm->retrieve_settings();
-    string newLanguage = stm->get_language();
+    Language newLanguage = stm->get_language();
     assert(currentLanguage != newLanguage);
 
     // Redirect cin back to screen
