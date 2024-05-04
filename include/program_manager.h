@@ -11,7 +11,6 @@ class ProgramManager{
 private:
     static ProgramManager* programManagerInstance;
     SceneManager* sceneManager;
-    // Settings manager
     
     ProgramManager();
 public:

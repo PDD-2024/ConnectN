@@ -5,6 +5,8 @@ SettingsManager::SettingsManager() {
     retrieve_settings();
 }
 
+/** Writes the user's current settings to the settings file.
+ */
 void SettingsManager::save_settings() {
     std::ofstream file;
     file.open(settings_file_path);
@@ -23,6 +25,8 @@ void SettingsManager::save_settings() {
     }
 }
 
+/** @brief Retrieves the user's currently configured settings.
+ */
 void SettingsManager::retrieve_settings() {
     // Read in the language settings from the file
     std::ifstream file;
@@ -44,11 +48,14 @@ void SettingsManager::retrieve_settings() {
 
     // Default to English, if no settings found
     if (!settingsFound) {
+        std::cout << "Settings not found!" << std::endl;
         language = English;
         save_settings();
     }
 }
 
+/** @brief Toggles ConnectN's language between Spanish and English.
+ */
 void SettingsManager::change_settings() {
     if (language == English) {
         language = Spanish;
@@ -57,11 +64,23 @@ void SettingsManager::change_settings() {
     }
 }
 
-std::string SettingsManager::get_language() {
+/** @brief Retrieves the currently configured language string.
+ */
+std::string SettingsManager::get_language_str() {
     if (language == English) {
         return std::string("English");
     } else {
         return std::string("Spanish");
+    }
+}
+
+/** @brief Retrieves the currently configured language string.
+ */
+Language SettingsManager::get_language() {
+    if (language == English) {
+        return English;
+    } else {
+        return Spanish;
     }
 }
 
@@ -71,6 +90,8 @@ SettingsManager* SettingsManager::get_instance() {
     if (settingsManagerInstance == nullptr) {
         settingsManagerInstance = new SettingsManager();
     }
+    
+    settingsManagerInstance->retrieve_settings();
     return settingsManagerInstance;
 }
 

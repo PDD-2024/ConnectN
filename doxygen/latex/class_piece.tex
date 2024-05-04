@@ -1,0 +1,115 @@
+\doxysection{Piece Class Reference}
+\hypertarget{class_piece}{}\label{class_piece}\index{Piece@{Piece}}
+
+
+Class to represent a playable piece in ConnectN.  
+
+
+
+
+{\ttfamily \#include $<$piece.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_piece_ac57de5803bbad829b143bc7268267dc1}\label{class_piece_ac57de5803bbad829b143bc7268267dc1} 
+{\bfseries Piece} ()
+\begin{DoxyCompactList}\small\item\em Default constructor to create a new piece object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_piece_a2bfd8a4199259e1201daefe34ced5b19}{Piece}} (int x, int y, \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Constructor to create a new piece object with a (x, y) position and associated player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_piece_a2e5f3a12d5677088cb4573c926906e34}{set\+\_\+position}} (\mbox{\hyperlink{struct_position}{Position}} new\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Sets the position of the piece object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_position}{Position}} \mbox{\hyperlink{class_piece_ae33d4ae0e13b1ce151c310292fba825a}{get\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the position of the piece object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_piece_a4afc5ca405765a9c09ea635d77236578}{get\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Gets the player associated with the piece object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to represent a playable piece in ConnectN. 
+
+A piece is composed of two components\+: the position and player.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{struct_position}{Position} 
+
+\doxylink{class_player}{Player} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_piece_a2bfd8a4199259e1201daefe34ced5b19}\label{class_piece_a2bfd8a4199259e1201daefe34ced5b19} 
+\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily Piece\+::\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructor to create a new piece object with a (x, y) position and associated player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the piece. \\
+\hline
+{\em y} & Y \doxylink{struct_position}{Position} of the piece \\
+\hline
+{\em p} & \doxylink{class_player}{Player} associated with the piece. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_piece_a4afc5ca405765a9c09ea635d77236578}\label{class_piece_a4afc5ca405765a9c09ea635d77236578} 
+\index{Piece@{Piece}!get\_player@{get\_player}}
+\index{get\_player@{get\_player}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_player()}{get\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*} Piece\+::get\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the player associated with the piece object. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_player}{Player} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player} associated with the piece object (Player\texorpdfstring{$\ast$}{*}) 
+\end{DoxyReturn}
+\Hypertarget{class_piece_ae33d4ae0e13b1ce151c310292fba825a}\label{class_piece_ae33d4ae0e13b1ce151c310292fba825a} 
+\index{Piece@{Piece}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_position}{Position}} Piece\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the position of the piece object. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{struct_position}{Position} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_position}{Position} of the piece object. 
+\end{DoxyReturn}
+\Hypertarget{class_piece_a2e5f3a12d5677088cb4573c926906e34}\label{class_piece_a2e5f3a12d5677088cb4573c926906e34} 
+\index{Piece@{Piece}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily void Piece\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}}}]{new\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the piece object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+position} & \doxylink{struct_position}{Position} enum to represent the (x, y) of the piece object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/piece.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/piece.\+cpp\end{DoxyCompactItemize}

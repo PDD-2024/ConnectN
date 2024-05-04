@@ -19,6 +19,7 @@ private:
     std::string PLAY_GAME = "1";
     std::string CHANGE_SETTINGS = "2";
     std::string VIEW_CREDITS = "3";
+    std::string EXIT = "4";
 
     static Menu* menuInstance;
 

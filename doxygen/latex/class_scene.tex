@@ -1,5 +1,14 @@
 \doxysection{Scene Class Reference}
 \hypertarget{class_scene}{}\label{class_scene}\index{Scene@{Scene}}
+
+
+Class that represents the visual and functional components of each scene in ConnectN. This prints its content with the \doxylink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{render()} method and accepts user input with the \doxylink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{handle\+\_\+input()} method. This class is to be overriden by derived application scenes.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
 Inheritance diagram for Scene\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,19 +19,20 @@ Inheritance diagram for Scene\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{render}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Method utilized to render the scene\textquotesingle{}s content. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{handle\+\_\+input}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Method utilized to accept and handle user input after rendering the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_scene_aedd6a190ee1363c35d023259f9ff389e}\label{class_scene_aedd6a190ee1363c35d023259f9ff389e} 
-std\+::string {\bfseries content}
+std\+::string \mbox{\hyperlink{class_scene_aedd6a190ee1363c35d023259f9ff389e}{content}}
 \item 
-\Hypertarget{class_scene_a2c74507957bd64d03a04fb7e84a268fb}\label{class_scene_a2c74507957bd64d03a04fb7e84a268fb} 
-bool {\bfseries is\+Rendered}
+bool \mbox{\hyperlink{class_scene_a2c74507957bd64d03a04fb7e84a268fb}{is\+Rendered}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that represents the visual and functional components of each scene in ConnectN. This prints its content with the \doxylink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{render()} method and accepts user input with the \doxylink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{handle\+\_\+input()} method. This class is to be overriden by derived application scenes. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_scene_ad2cea0111fbe68459a3305f7e710df77}\label{class_scene_ad2cea0111fbe68459a3305f7e710df77} 
@@ -33,7 +43,11 @@ bool {\bfseries is\+Rendered}
 
 
 
-Implemented in \mbox{\hyperlink{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf}{Settings}}.
+Method utilized to accept and handle user input after rendering the scene. 
+
+
+
+Implemented in \mbox{\hyperlink{class_credits_a7354f4ba6ae40311be01d017d7eb3f21}{Credits}}, \mbox{\hyperlink{class_game_a2f7690204196f8d6500aae6a933ef1a1}{Game}}, \mbox{\hyperlink{class_menu_ae2747956a2f50ce7ac93168dc0536955}{Menu}}, and \mbox{\hyperlink{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf}{Settings}}.
 
 \Hypertarget{class_scene_a823f4cd60d27932ee16f74adb0421ff6}\label{class_scene_a823f4cd60d27932ee16f74adb0421ff6} 
 \index{Scene@{Scene}!render@{render}}
@@ -43,9 +57,28 @@ Implemented in \mbox{\hyperlink{class_settings_a2e51d4db10e4dc93cf10d03bb0a710bf
 
 
 
-Implemented in \mbox{\hyperlink{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f}{Settings}}.
+Method utilized to render the scene\textquotesingle{}s content. 
 
 
+
+Implemented in \mbox{\hyperlink{class_credits_a4b87698f090a28c2e3203ad1a4021530}{Credits}}, \mbox{\hyperlink{class_game_a5520e54d012dc86ebfc549a43290f80f}{Game}}, \mbox{\hyperlink{class_menu_adc427e240092c292e74648d25be9c912}{Menu}}, and \mbox{\hyperlink{class_settings_a80b0a4d29d4ba5a1f498d1b64c0fc09f}{Settings}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scene_aedd6a190ee1363c35d023259f9ff389e}\label{class_scene_aedd6a190ee1363c35d023259f9ff389e} 
+\index{Scene@{Scene}!content@{content}}
+\index{content@{content}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily std\+::string Scene\+::content}
+
+Content that visually represents the scene. To be configured in derived class constructors. \Hypertarget{class_scene_a2c74507957bd64d03a04fb7e84a268fb}\label{class_scene_a2c74507957bd64d03a04fb7e84a268fb} 
+\index{Scene@{Scene}!isRendered@{isRendered}}
+\index{isRendered@{isRendered}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{isRendered}{isRendered}}
+{\footnotesize\ttfamily bool Scene\+::is\+Rendered}
+
+Boolean to represent whether a scene is being rendered. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

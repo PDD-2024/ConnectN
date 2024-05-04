@@ -3,22 +3,20 @@
 #include "credits.h"
 #include "scene_manager.h"
 #include "menu.h"
+#include "settings_manager.h"
 
-Credits::Credits() {
-    isRendered = false;
-    // TODO: assign based off of language set in settings
-    content = std::string("\n\n\nCreated by J&B Development\n\tJoel Markley - Developer\n\tBrooklyn Cooper - Developer\n\nEnter (") + std::string(RETURN_TO_MENU) + std::string(") to return to menu\n\n");
-}
+Credits::Credits() {}
 
 /// <inheritdoc />
 void Credits::render() {
-    std::cout << content << std::endl;
-    isRendered = true;
+    Language language = SettingsManager::get_instance()->get_language();
+    std::cout << CREDITS_CONTENT.at(language)[0] + std::string(RETURN_TO_MENU) + CREDITS_CONTENT.at(language)[1] << std::endl;
 }
 
 /// <inheritdoc />
 void Credits::handle_input() {
     SceneManager* sm = SceneManager::get_instance();
+    Language language = SettingsManager::get_instance()->get_language();
 
     bool isValidInput = false;
     std::string input;
@@ -28,7 +26,7 @@ void Credits::handle_input() {
             isValidInput = true;
             sm->set_scene(Menu::get_instance());
         } else {
-            std::cout << "Invalid input! Please enter a valid input: " << std::endl;
+            std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         } 
     }
 }

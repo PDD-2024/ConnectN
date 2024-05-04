@@ -5,22 +5,20 @@
 #include "scene_manager.h"
 #include "settings_manager.h"
 
-Settings::Settings() {
-    SettingsManager *stm = SettingsManager::get_instance();
-    std::string language = stm->get_language();
-    isRendered = false;
-    content = std::string("\n\n\nSettings - Choose an option\n\t(") + CHANGE_LANGUAGE + std::string(") Change Language (current:" + language + ")\n\t(") + SAVE_AND_RETURN_TO_MENU + std::string(") Save Settings and Return to Menu \n\t(") + RETURN_TO_MENU + std::string(") Return to Menu\n\n");
-}
+Settings::Settings() {}
 
 /// <inheritdoc />
 void Settings::render() {
-    std::cout << content << std::endl;
-    isRendered = true;
+    SettingsManager *stm = SettingsManager::get_instance();
+    Language language = stm->get_language();
+    std::string language_str = stm->get_language_str();
+    std::cout << SETTINGS_CONTENT.at(language)[0] + CHANGE_LANGUAGE + SETTINGS_CONTENT.at(language)[1] + language_str + ")\n\t(" + SAVE_AND_RETURN_TO_MENU + SETTINGS_CONTENT.at(language)[2] + RETURN_TO_MENU + SETTINGS_CONTENT.at(language)[3] << std::endl;
 }
 
 /// <inheritdoc />
 void Settings::handle_input() {
     SceneManager* sm = SceneManager::get_instance();
+    Language language = SettingsManager::get_instance()->get_language();
 
     bool isValidInput = false;
     std::string input;
@@ -42,7 +40,7 @@ void Settings::handle_input() {
 
             sm->set_scene(Menu::get_instance());
         } else {
-            std::cout << "Invalid input! Please enter a valid input: " << std::endl;
+            std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         }
     }
 }
