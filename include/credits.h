@@ -11,7 +11,7 @@ class Credits : public Scene {
 private:
     std::string RETURN_TO_MENU = "1";
 
-    static Credits* creditsInstance;
+    static Credits* s_credits_instance;
 
     Credits();
 public:

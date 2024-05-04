@@ -9,7 +9,7 @@
 
 class ProgramManager{
 private:
-    static ProgramManager* programManagerInstance;
+    static ProgramManager* s_program_manager_instance;
     SceneManager* sceneManager;
     
     ProgramManager();

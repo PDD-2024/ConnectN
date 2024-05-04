@@ -31,14 +31,14 @@ void Credits::handle_input() {
     }
 }
 
-Credits* Credits::creditsInstance = nullptr;
+Credits* Credits::s_credits_instance = nullptr;
 
 Credits* Credits::get_instance() {
-    if (creditsInstance == nullptr) {
-        creditsInstance = new Credits();
+    if (s_credits_instance == nullptr) {
+        s_credits_instance = new Credits();
     }
 
-    return creditsInstance;
+    return s_credits_instance;
 }
 
 Credits::~Credits() {}

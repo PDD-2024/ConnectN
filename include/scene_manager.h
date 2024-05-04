@@ -7,7 +7,7 @@ class SceneManager {
 private:
     SceneManager();
 
-    static SceneManager* sceneManagerInstance;
+    static SceneManager* s_scene_manager_instance;
 public:
     Scene* currentScene;
 

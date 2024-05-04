@@ -15,13 +15,9 @@ void SettingsManager::save_settings() {
         if (language == English) {
             file << "English";
         } else {
-            file << "Spanish";
+            file << "Español";
         }
         file.close();
-    }
-    else {
-        // TODO: error handle
-        std::cout << "File I/O Error";
     }
 }
 
@@ -39,7 +35,7 @@ void SettingsManager::retrieve_settings() {
             language = English;
             settingsFound = true;
         }
-        if (line == "Spanish") {
+        if (line == "Español") {
             language = Spanish;
             settingsFound = true;
         }
@@ -48,7 +44,6 @@ void SettingsManager::retrieve_settings() {
 
     // Default to English, if no settings found
     if (!settingsFound) {
-        std::cout << "Settings not found!" << std::endl;
         language = English;
         save_settings();
     }
@@ -70,7 +65,7 @@ std::string SettingsManager::get_language_str() {
     if (language == English) {
         return std::string("English");
     } else {
-        return std::string("Spanish");
+        return std::string("Español");
     }
 }
 
@@ -84,13 +79,13 @@ Language SettingsManager::get_language() {
     }
 }
 
-SettingsManager* SettingsManager::settingsManagerInstance = nullptr;
+SettingsManager* SettingsManager::s_settings_manager_instance = nullptr;
 
 SettingsManager* SettingsManager::get_instance() {
-    if (settingsManagerInstance == nullptr) {
-        settingsManagerInstance = new SettingsManager();
+    if (s_settings_manager_instance == nullptr) {
+        s_settings_manager_instance = new SettingsManager();
     }
     
-    return settingsManagerInstance;
+    return s_settings_manager_instance;
 }
 

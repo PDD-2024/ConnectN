@@ -21,7 +21,7 @@ private:
     std::string VIEW_CREDITS = "3";
     std::string EXIT = "4";
 
-    static Menu* menuInstance;
+    static Menu* s_menu_instance;
 
     Menu();
 public:

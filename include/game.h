@@ -8,6 +8,11 @@
 #include "board.h"
 #include "player.h"
 
+/**
+ * @brief Enum to represent the states that the Game can be in
+ * 
+ * @see Game
+ */
 enum State {
     getPlayer1Name, 
     getPlayer2Name,
@@ -16,6 +21,19 @@ enum State {
     gameOver
 };
 
+/**
+ * @brief Class that implements scene to create the game scene.
+ * 
+ * The main game scene. Can have one of several states to allow the user to choose the players' names, 
+ * set the board size, play the game, and then play again, exit, or return to the menu. When in playing 
+ * state, shows players a representation of the board and lets them take turns placing pieces in columns. 
+ * This state is exited when the check for game over returns successfully.
+ * 
+ * @see Scene
+ * @see Menu
+ * @see Board
+ * @see Player
+ */
 class Game : public Scene {
 private:
     Board *board;

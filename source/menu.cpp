@@ -36,10 +36,8 @@ void Menu::handle_input() {
             isValidInput = true;
             sm->set_scene(Credits::get_instance());
         }  else if (input == EXIT) {
-            // TODO: do this a little nicer, maybe return control to ProgramManager
             exit(0);
         } else {
-            // TODO: handle error
             std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         }
     }
@@ -47,20 +45,13 @@ void Menu::handle_input() {
 
 Menu::~Menu() {}
 
-Menu* Menu::menuInstance = nullptr;
+Menu* Menu::s_menu_instance = nullptr;
 
 Menu* Menu::get_instance() {
-    if (menuInstance == nullptr) {
-        menuInstance = new Menu();
+    if (s_menu_instance == nullptr) {
+        s_menu_instance = new Menu();
     }
 
-    return menuInstance;
+    return s_menu_instance;
 }
 
-// Testing
-//int main(int argc, char **argv) {
-//    Menu m = Menu();
-//    m.render();
-//    m.handle_input();
-//    return 0;
-//}

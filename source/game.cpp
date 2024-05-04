@@ -161,7 +161,6 @@ void Game::handle_input() {
             SceneManager* sm = SceneManager::get_instance();
             sm->set_scene(Menu::get_instance());
         } else if (input == EXIT) {
-            // TODO: do this a little nicer, maybe return control to ProgramManager
             exit(0);
         } else if (input != PLAY_GAME) {
             std::cout << GAME_ERRORS.at(language)[4] << std::endl;

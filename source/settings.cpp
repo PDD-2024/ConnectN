@@ -26,7 +26,6 @@ void Settings::handle_input() {
         getline(std::cin, input);
         if (input == CHANGE_LANGUAGE) {
             isValidInput = true;
-            //content = "Enter: (1) to switch language to English\t(2) to switch language to Spanish";
             SettingsManager *stm = SettingsManager::get_instance();
             stm->change_settings();
         } else if (input == SAVE_AND_RETURN_TO_MENU) {

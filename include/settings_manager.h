@@ -14,7 +14,7 @@ private:
     std::string settings_file_path = "settings.txt";
     SettingsManager();
 
-    static SettingsManager* settingsManagerInstance;
+    static SettingsManager* s_settings_manager_instance;
 public:
     ~SettingsManager();
     /** @brief Retrieves the settings manager singleton instance.

@@ -6,13 +6,13 @@ void SceneManager::set_scene(Scene* scene) {
     this->currentScene = scene;
 }
 
-SceneManager* SceneManager::sceneManagerInstance = nullptr;
+SceneManager* SceneManager::s_scene_manager_instance = nullptr;
 
 SceneManager* SceneManager::get_instance() {
-    if (sceneManagerInstance == nullptr) {
-        sceneManagerInstance = new SceneManager();
+    if (s_scene_manager_instance == nullptr) {
+        s_scene_manager_instance = new SceneManager();
     }
 
-    return sceneManagerInstance;
+    return s_scene_manager_instance;
 }
 

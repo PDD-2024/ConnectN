@@ -4,14 +4,14 @@ ProgramManager::ProgramManager() {
     this->sceneManager = SceneManager::get_instance();
 }
 
-ProgramManager* ProgramManager::programManagerInstance = nullptr;
+ProgramManager* ProgramManager::s_program_manager_instance = nullptr;
 
 ProgramManager* ProgramManager::get_instance() {
-    if (programManagerInstance == nullptr) {
-        programManagerInstance = new ProgramManager();
+    if (s_program_manager_instance == nullptr) {
+        s_program_manager_instance = new ProgramManager();
     }
 
-    return programManagerInstance;
+    return s_program_manager_instance;
 }
 
 void ProgramManager::init() {
