@@ -5,22 +5,21 @@
 #include "game.h"
 #include "settings.h"
 #include "credits.h"
+#include "settings_manager.h"
+#include "language.h"
 
-Menu::Menu() {
-    isRendered = false;
-    // TODO: assign based off of language set in settings
-    content = std::string("\n\n\nMenu - Choose an option\n\t(") + PLAY_GAME + std::string(") Play Game\n\t(") + CHANGE_SETTINGS + std::string(") Change Settings\n\t(") + VIEW_CREDITS + std::string(") View Credits\n\t(") + EXIT + std::string(") Exit\n\n");
-}
+Menu::Menu() {}
 
 /// <inheritdoc />
 void Menu::render() {
-    std::cout << content << std::endl;
-    isRendered = true;
+    Language language = SettingsManager::get_instance()->get_language();
+    std::cout << MENU_CONTENT.at(language)[0] + PLAY_GAME + MENU_CONTENT.at(language)[1] + CHANGE_SETTINGS + MENU_CONTENT.at(language)[2] + VIEW_CREDITS + MENU_CONTENT.at(language)[3] + EXIT + MENU_CONTENT.at(language)[4] << std::endl;
 }
 
 /// <inheritdoc />
 void Menu::handle_input() {
     SceneManager* sm = SceneManager::get_instance();
+    Language language = SettingsManager::get_instance()->get_language();
 
     bool isValidInput = false;
     std::string input;
@@ -41,7 +40,7 @@ void Menu::handle_input() {
             exit(0);
         } else {
             // TODO: handle error
-            std::cout << "Invalid input!" << std::endl;
+            std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         }
     }
 }

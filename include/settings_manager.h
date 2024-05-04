@@ -23,7 +23,8 @@ public:
     void change_settings();
     void save_settings();
     void retrieve_settings();
-    std::string get_language();
+    Language get_language();
+    std::string get_language_str();
 };
 
 #endif

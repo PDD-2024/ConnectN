@@ -48,6 +48,7 @@ void SettingsManager::retrieve_settings() {
 
     // Default to English, if no settings found
     if (!settingsFound) {
+        std::cout << "Settings not found!" << std::endl;
         language = English;
         save_settings();
     }
@@ -63,13 +64,23 @@ void SettingsManager::change_settings() {
     }
 }
 
-/** @brief Retrieves the currently configured language.
+/** @brief Retrieves the currently configured language string.
  */
-std::string SettingsManager::get_language() {
+std::string SettingsManager::get_language_str() {
     if (language == English) {
         return std::string("English");
     } else {
         return std::string("Spanish");
+    }
+}
+
+/** @brief Retrieves the currently configured language string.
+ */
+Language SettingsManager::get_language() {
+    if (language == English) {
+        return English;
+    } else {
+        return Spanish;
     }
 }
 
@@ -79,6 +90,8 @@ SettingsManager* SettingsManager::get_instance() {
     if (settingsManagerInstance == nullptr) {
         settingsManagerInstance = new SettingsManager();
     }
+    
+    settingsManagerInstance->retrieve_settings();
     return settingsManagerInstance;
 }
 
