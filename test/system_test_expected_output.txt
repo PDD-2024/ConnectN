@@ -1,0 +1,218 @@
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Change Settings
+	(3) View Credits
+
+
+
+
+
+Created by J&B Development
+	Joel Markley - Developer
+	Brooklyn Cooper - Developer
+
+Enter (1) to return to menu
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Change Settings
+	(3) View Credits
+
+
+
+
+
+Settings - Choose an option
+	(1) Change Language (current:Spanish)
+	(2) Save Settings and Return to Menu 
+	(3) Return to Menu
+
+
+
+
+
+Settings - Choose an option
+	(1) Change Language (current:Spanish)
+	(2) Save Settings and Return to Menu 
+	(3) Return to Menu
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Change Settings
+	(3) View Credits
+
+
+
+
+
+Game - Enter the first player's name:
+
+
+
+
+
+Game - Enter the second player's name:
+
+
+
+
+
+Game - Enter N (the number of tiles to connect in order to win):
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|                   |
+
+ It's Rebecca's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R                |
+
+ It's Bill's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B             |
+
+ It's Rebecca's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B           R |
+
+ It's Bill's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B  B        R |
+
+ It's Rebecca's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B        R |
+
+ It's Bill's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B     B  R |
+
+ It's Rebecca's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B  R  B  R |
+
+ It's Bill's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game 
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|     B           R |
+|  R  B  B  R  B  R |
+
+ It's Rebecca's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+Game
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                 R |
+|     B           R |
+|  R  B  B  R  B  R |
+
+
+
+
+Game - The winner is Rebecca! Choose an option:
+	(1) Play again
+	(2) Return to menu
+	(3) Exit
+
+

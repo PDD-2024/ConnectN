@@ -11,8 +11,16 @@ add_subdirectory(source)
 
 add_executable(ConnectN main.cpp)
 
+
 target_link_libraries(ConnectN PUBLIC source)
 target_include_directories(ConnectN PUBLIC
+                          "${PROJECT_BINARY_DIR}"
+                          "${PROJECT_SOURCE_DIR}/include"
+                          )
+
+add_executable(Testing testing.cpp)
+target_link_libraries(Testing PUBLIC source)
+target_include_directories(Testing PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PROJECT_SOURCE_DIR}/include"
                           )

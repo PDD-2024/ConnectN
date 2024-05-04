@@ -25,15 +25,6 @@ Piece::Piece(int x, int y, Player *p) {
 Piece::~Piece() {}
 
 /**
- * @brief Sets the position of the piece object.
- * 
- * @param new_position Position enum to represent the (x, y) of the piece object.
- */
-void Piece::set_position(Position new_position) {
-    this->position = new_position;
-}
-
-/**
  * @brief Gets the position of the piece object.
  * @see Position
  * @return Position of the piece object.
