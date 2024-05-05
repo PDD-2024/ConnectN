@@ -22,9 +22,15 @@ void ProgramManager::init() {
 
     this->sceneManager->set_scene(menuScene);
 
+    this->exit = false;
+
     // Game loop
-    while (true) {
+    while (!exit) {
         this->sceneManager->currentScene->render();
         this->sceneManager->currentScene->handle_input();
     }
+}
+
+void ProgramManager::end() {
+    exit = true;
 }

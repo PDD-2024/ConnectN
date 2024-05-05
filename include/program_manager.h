@@ -11,11 +11,13 @@ class ProgramManager{
 private:
     static ProgramManager* s_program_manager_instance;
     SceneManager* sceneManager;
+    bool exit;
     
     ProgramManager();
 public:
     ~ProgramManager();
     void init();
+    void end();
     static ProgramManager* get_instance();
 };
 

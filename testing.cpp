@@ -179,6 +179,8 @@ void system_tests() {
 
     ProgramManager *pm = ProgramManager::get_instance();
     pm->init();
+    pm->init();
+    pm->init();
 
     // Redirect cin and cout back to screen
     cin.rdbuf(cinSB);
@@ -187,13 +189,18 @@ void system_tests() {
     fileOut.close();
 
     // Read content of output file and conpare to the expected output
-    ifstream realOutputFile("system_test_output.txt");
-    ifstream expectedOutputFile("system_test_expected_output.txt"); 
+    ifstream realOutputFile("../test/system_test_output.txt");
+    ifstream expectedOutputFile("../test/system_test_expected_output.txt"); 
   
     string realLine;
     string expectedLine;  
      
-    while (getline(realOutputFile, realLine) && getline(expectedOutputFile, expectedLine)) { 
+    while (getline(realOutputFile,realLine)){
+        getline(expectedOutputFile, expectedLine);
+         assert(realLine == expectedLine);
+    } 
+    while (getline(expectedOutputFile,expectedLine)){
+        getline(realOutputFile, realLine);
          assert(realLine == expectedLine);
     } 
   

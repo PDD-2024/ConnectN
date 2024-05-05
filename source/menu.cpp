@@ -7,6 +7,7 @@
 #include "credits.h"
 #include "settings_manager.h"
 #include "language.h"
+#include "program_manager.h"
 
 Menu::Menu() {}
 
@@ -36,7 +37,9 @@ void Menu::handle_input() {
             isValidInput = true;
             sm->set_scene(Credits::get_instance());
         }  else if (input == EXIT) {
-            exit(0);
+            isValidInput = true;
+            ProgramManager *pm = ProgramManager::get_instance();
+            pm->end();
         } else {
             std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         }

@@ -6,6 +6,7 @@
 #include "game.h"
 #include "language.h"
 #include "settings_manager.h"
+#include "program_manager.h"
 
 /**
  * @brief Construct a new Game of ConnectN.
@@ -107,6 +108,7 @@ void Game::render() {
  * @see Scene
  */
 void Game::handle_input() {
+    ProgramManager *pm = ProgramManager::get_instance();
     Language language = SettingsManager::get_instance()->get_language();
     
     std::string input;
@@ -161,14 +163,14 @@ void Game::handle_input() {
             SceneManager* sm = SceneManager::get_instance();
             sm->set_scene(Menu::get_instance());
         } else if (input == EXIT) {
-            exit(0);
+            pm->end();
         } else if (input != PLAY_GAME) {
             std::cout << GAME_ERRORS.at(language)[4] << std::endl;
         }
     } else {
         // State has not been properly initialized. Print error message and exit.
         std::cout << GAME_ERRORS.at(language)[0] << std::endl;
-        exit(1);
+        pm->end();
     }
 }
 
