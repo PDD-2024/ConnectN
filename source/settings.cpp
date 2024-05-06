@@ -44,14 +44,14 @@ void Settings::handle_input() {
     }
 }
 
-Settings* Settings::settingsInstance = nullptr;
+Settings* Settings::s_settings_instance = nullptr;
 
 Settings* Settings::get_instance() {
-    if (settingsInstance == nullptr) {
-        settingsInstance = new Settings();
+    if (s_settings_instance == nullptr) {
+        s_settings_instance = new Settings();
     }
 
-    return settingsInstance;
+    return s_settings_instance;
 }
 
 Settings::~Settings() {}

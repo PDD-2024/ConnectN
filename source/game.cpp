@@ -25,6 +25,7 @@ Game::Game() {
     
     currentState = getPlayer1Name;
     playsNext = player1;
+    roundNumber = 1;
 }
 
 /**
@@ -59,6 +60,9 @@ int Game::player_turn(int column) {
         return 1;
     }
 
+    // Update round number 
+    roundNumber++;
+
     // Switch to the other player's turn
     if (this->playsNext == player1) {
         this->playsNext = player2;
@@ -87,7 +91,7 @@ void Game::render() {
         content = GAME_CONTENT.at(language)[2];
     } else if (currentState == playGame) { 
         std::string board_string = board->board_to_string();
-        content = board_string + GAME_CONTENT.at(language)[3] + std::string(playsNext->get_name()) + GAME_CONTENT.at(language)[4];
+        content = board_string + GAME_CONTENT.at(language)[11] + std::to_string(roundNumber) + " -" + GAME_CONTENT.at(language)[3] + std::string(playsNext->get_name()) + GAME_CONTENT.at(language)[4];
     } else if (currentState == gameOver) {
         if (winner == NULL) {
             content = "\n\n\n\n" + board->board_to_string() + GAME_CONTENT.at(language)[5] + PLAY_GAME + GAME_CONTENT.at(language)[6] + RETURN_TO_MENU + GAME_CONTENT.at(language)[7] + EXIT + GAME_CONTENT.at(language)[8];
@@ -158,6 +162,7 @@ void Game::handle_input() {
         board = NULL;
         winner = NULL;
         currentState = getPlayer1Name;
+        roundNumber = 1;
         playsNext = player1;
         if (input == RETURN_TO_MENU) { // Return to Menu
             SceneManager* sm = SceneManager::get_instance();

@@ -11,7 +11,7 @@
 class SettingsManager {
 private:
     Language language;
-    std::string settings_file_path = "settings.txt";
+    std::string settingsFilePath = "settings.txt";
     SettingsManager();
 
     static SettingsManager* s_settings_manager_instance;

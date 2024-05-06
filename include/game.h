@@ -42,6 +42,7 @@ private:
     Player *playsNext;
     Player *winner;
     State currentState;
+    int roundNumber;
     std::string PLAY_GAME = "1";
     std::string RETURN_TO_MENU = "2";
     std::string EXIT = "3";

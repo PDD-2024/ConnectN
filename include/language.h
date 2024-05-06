@@ -22,10 +22,10 @@ const std::map<Language, std::array<std::string, 2> > CREDITS_CONTENT{
 const std::map<Language, std::array<std::string, 12> > GAME_CONTENT{
     {English, {std::string("\n\n\nEnter the first player's name:\n\n"), std::string("\n\n\nEnter the second player's name:\n\n"), std::string("\n\n\nEnter N (the number of tiles to connect in order to win):\n\n"),
     std::string(" It's "), std::string("'s turn. Enter the number of the column where you would like to play:\n\n"), std::string("\n\n\nThe game ended in a tie. Choose an option:\n\t("), std::string(") Play again\n\t("),
-    std::string(") Return to menu\n\t("), std::string(") Exit\n\n"), std::string("\n\n\nThe winner is "), std::string("! Choose an option:\n\t(")}}, 
+    std::string(") Return to menu\n\t("), std::string(") Exit\n\n"), std::string("\n\n\nThe winner is "), std::string("! Choose an option:\n\t("), std::string("Round ")}}, 
     {Spanish, {std::string("\n\n\nIntroduce el nombre del primer jugador:\n\n"), std::string("\n\n\nIntroduce el nombre del segundo jugador:\n\n"), std::string("\n\n\nIntroduce N (el número de fichas que se han de conectar para ganar):\n\n"),
     std::string(" Es el turno de "), std::string(". Introduce el número de la columna en la que quieres jugar:\n\n"), std::string("\n\n\nEl juego ha acabado en empate. Elige una opción:\n\t("), std::string(") Jugar de nuevo\n\t("),
-    std::string(") Volver al menú\n\t("), std::string(") Salir\n\n"), std::string("\n\n\nEl ganador es "), std::string("! Elije una opción:\n\t(")}}
+    std::string(") Volver al menú\n\t("), std::string(") Salir\n\n"), std::string("\n\n\nEl ganador es "), std::string("! Elije una opción:\n\t("), std::string("Ronda ")}}
 };
 
 const std::map<Language, std::array<std::string, 5> > GAME_ERRORS{

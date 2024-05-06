@@ -9,7 +9,7 @@ SettingsManager::SettingsManager() {
  */
 void SettingsManager::save_settings() {
     std::ofstream file;
-    file.open(settings_file_path);
+    file.open(settingsFilePath);
     if (file.is_open())
     {
         if (language == English) {
@@ -28,7 +28,7 @@ void SettingsManager::retrieve_settings() {
     std::ifstream file;
     std::string line;
 
-    file.open(settings_file_path);
+    file.open(settingsFilePath);
     bool settingsFound = false;
     while (getline(file, line)) {
         if (line == "English") {

@@ -81,7 +81,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                   |
 |                   |
 
- Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+Ronda 1 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -91,7 +91,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                   |
 |  R                |
 
- Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+Ronda 2 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -101,7 +101,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                   |
 |  R  B             |
 
- Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+Ronda 3 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -111,7 +111,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                   |
 |  R  B           R |
 
- Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+Ronda 4 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -121,7 +121,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                   |
 |  R  B  B        R |
 
- Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+Ronda 5 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -131,7 +131,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                 R |
 |  R  B  B        R |
 
- Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+Ronda 6 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -141,7 +141,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                 R |
 |  R  B  B     B  R |
 
- Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+Ronda 7 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -151,7 +151,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |                 R |
 |  R  B  B  R  B  R |
 
- Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+Ronda 8 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
 
 
 |  0  1  2  3  4  5 |
@@ -161,7 +161,7 @@ Introduce N (el número de fichas que se han de conectar para ganar):
 |     B           R |
 |  R  B  B  R  B  R |
 
- Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+Ronda 9 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
 
 
 
@@ -253,7 +253,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                                     |
 |                                                     |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 1 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -269,7 +269,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                                     |
 |                                           R         |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 2 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -285,7 +285,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                                     |
 |                           B               R         |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 3 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -301,7 +301,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |                           B               R         |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 4 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -317,7 +317,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B                   B               R         |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 5 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -333,7 +333,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B                   B               R         |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 6 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -349,7 +349,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B                   B               R       B |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 7 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -365,7 +365,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B                   B               R       B |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 8 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -381,7 +381,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B       B           B               R       B |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 9 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -397,7 +397,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B       B           B               R       B |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 10 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -413,7 +413,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B   B   B           B               R       B |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 11 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -429,7 +429,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B   B   B           B               R       B |
 
- It's Bob's turn. Enter the number of the column where you would like to play:
+Round 12 - It's Bob's turn. Enter the number of the column where you would like to play:
 
 
 |   0   1   2   3   4   5   6   7   8   9  10  11  12 |
@@ -445,7 +445,7 @@ Enter N (the number of tiles to connect in order to win):
 |                                           R         |
 |       B   B   B   B       B               R       B |
 
- It's Ramone's turn. Enter the number of the column where you would like to play:
+Round 13 - It's Ramone's turn. Enter the number of the column where you would like to play:
 
 
 
@@ -530,7 +530,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |                      |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 1 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -541,7 +541,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |  R                   |
 
- It's Beth's turn. Enter the number of the column where you would like to play:
+Round 2 - It's Beth's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -552,7 +552,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |  R                 B |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 3 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -563,7 +563,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |  R        R        B |
 
- It's Beth's turn. Enter the number of the column where you would like to play:
+Round 4 - It's Beth's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -574,7 +574,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |  R        R  B     B |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 5 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -585,7 +585,7 @@ Enter N (the number of tiles to connect in order to win):
 |                      |
 |  R        R  B  R  B |
 
- It's Beth's turn. Enter the number of the column where you would like to play:
+Round 6 - It's Beth's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -596,7 +596,7 @@ Enter N (the number of tiles to connect in order to win):
 |                 B    |
 |  R        R  B  R  B |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 7 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -607,7 +607,7 @@ Enter N (the number of tiles to connect in order to win):
 |              R  B    |
 |  R        R  B  R  B |
 
- It's Beth's turn. Enter the number of the column where you would like to play:
+Round 8 - It's Beth's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -618,7 +618,7 @@ Enter N (the number of tiles to connect in order to win):
 |              R  B  B |
 |  R        R  B  R  B |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 9 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -629,7 +629,7 @@ Enter N (the number of tiles to connect in order to win):
 |              R  B  B |
 |  R        R  B  R  B |
 
- It's Beth's turn. Enter the number of the column where you would like to play:
+Round 10 - It's Beth's turn. Enter the number of the column where you would like to play:
 
 
 |  0  1  2  3  4  5  6 |
@@ -640,7 +640,7 @@ Enter N (the number of tiles to connect in order to win):
 |              R  B  B |
 |  R        R  B  R  B |
 
- It's Ron's turn. Enter the number of the column where you would like to play:
+Round 11 - It's Ron's turn. Enter the number of the column where you would like to play:
 
 
 

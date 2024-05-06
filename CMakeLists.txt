@@ -18,9 +18,9 @@ target_include_directories(ConnectN PUBLIC
                           "${PROJECT_SOURCE_DIR}/include"
                           )
 
-add_executable(Testing testing.cpp)
-target_link_libraries(Testing PUBLIC source)
-target_include_directories(Testing PUBLIC
+add_executable(TestCases testing.cpp)
+target_link_libraries(TestCases PUBLIC source)
+target_include_directories(TestCases PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PROJECT_SOURCE_DIR}/include"
                           )
