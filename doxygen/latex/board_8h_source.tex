@@ -1,0 +1,32 @@
+\doxysection{board.\+h}
+\hypertarget{board_8h_source}{}\label{board_8h_source}\index{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/board.h@{/Users/joeymarkley/Documents/Visual Studio Code/C++/3081CSCI/ConnectN/include/board.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOARD}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOARD}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}piece.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}player.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_board}{Board}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_piece}{Piece}}\ ***pieces;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ n;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{\string~Board}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_af4ad05ecfbff31926e2102f2602a29cc}{place\_piece}}(\textcolor{keywordtype}{int}\ column,\ \mbox{\hyperlink{class_player}{Player}}\ *player);}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}\ *\mbox{\hyperlink{class_board_a843e7770c45c28285ef085beef1b63bb}{check\_for\_winner}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_board_a186fedd177c905c3e3b2768af5091878}{check\_if\_full}}();}
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ \mbox{\hyperlink{class_board_a3f8118799b89016f66e2e8de9ef261bf}{board\_to\_string}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_board_a8c2f249fd43982c20052384ff5443341}{get\_n}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_board_a5eb8b8fd57b54ee43c189e16a9ee577b}{get\_width}}();}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

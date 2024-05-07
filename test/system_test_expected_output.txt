@@ -1,0 +1,676 @@
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+
+
+
+
+Created by J&B Development
+	Joel Markley - Developer
+	Brooklyn Cooper - Developer
+
+Enter (1) to return to menu
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+
+
+
+
+Settings - Choose an option:
+	(1) Change Language (current: English)
+	(2) Save Settings and Return to Menu
+	(3) Return to Menu
+
+
+
+
+
+Ajustes - Elige una opción:
+	(1) Cambiar idioma (actual: Español)
+	(2) Guardar ajustes y volver al menú
+	(3) Volver al menú
+
+
+
+
+
+Menú - Elige una opción
+	(1) Jugar
+	(2) Ajustes
+	(3) Ver créditos
+	(4) Salida
+
+
+
+
+
+Introduce el nombre del primer jugador:
+
+
+
+
+
+Introduce el nombre del segundo jugador:
+
+
+
+
+
+Introduce N (el número de fichas que se han de conectar para ganar):
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|                   |
+
+Ronda 1 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R                |
+
+Ronda 2 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B             |
+
+Ronda 3 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B           R |
+
+Ronda 4 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                   |
+|  R  B  B        R |
+
+Ronda 5 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B        R |
+
+Ronda 6 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B     B  R |
+
+Ronda 7 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|                 R |
+|  R  B  B  R  B  R |
+
+Ronda 8 - Es el turno de Bill. Introduce el número de la columna en la que quieres jugar:
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                   |
+|     B           R |
+|  R  B  B  R  B  R |
+
+Ronda 9 - Es el turno de Rebecca. Introduce el número de la columna en la que quieres jugar:
+
+
+
+
+
+
+|  0  1  2  3  4  5 |
+|                   |
+|                   |
+|                 R |
+|     B           R |
+|  R  B  B  R  B  R |
+
+
+
+
+El ganador es Rebecca! Elije una opción:
+	(1) Jugar de nuevo
+	(2) Volver al menú
+	(3) Salir
+
+
+
+
+
+Menú - Elige una opción
+	(1) Jugar
+	(2) Ajustes
+	(3) Ver créditos
+	(4) Salida
+
+
+
+
+
+Ajustes - Elige una opción:
+	(1) Cambiar idioma (actual: Español)
+	(2) Guardar ajustes y volver al menú
+	(3) Volver al menú
+
+
+
+
+
+Settings - Choose an option:
+	(1) Change Language (current: English)
+	(2) Save Settings and Return to Menu
+	(3) Return to Menu
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+
+
+
+
+Enter the first player's name:
+
+
+
+
+
+Enter the second player's name:
+
+
+
+
+
+Enter N (the number of tiles to connect in order to win):
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+
+Round 1 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+
+Round 2 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                           B               R         |
+
+Round 3 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                           B               R         |
+
+Round 4 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|       B                   B               R         |
+
+Round 5 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|       B                   B               R         |
+
+Round 6 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|       B                   B               R       B |
+
+Round 7 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B                   B               R       B |
+
+Round 8 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B       B           B               R       B |
+
+Round 9 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B       B           B               R       B |
+
+Round 10 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B   B   B           B               R       B |
+
+Round 11 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B   B   B           B               R       B |
+
+Round 12 - It's Bob's turn. Enter the number of the column where you would like to play:
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B   B   B   B       B               R       B |
+
+Round 13 - It's Ramone's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+
+|   0   1   2   3   4   5   6   7   8   9  10  11  12 |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                                     |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|                                           R         |
+|       B   B   B   B       B               R       B |
+
+
+
+
+The winner is Ramone! Choose an option:
+	(1) Play again
+	(2) Return to menu
+	(3) Exit
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+
+
+
+
+Created by J&B Development
+	Joel Markley - Developer
+	Brooklyn Cooper - Developer
+
+Enter (1) to return to menu
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+
+
+
+
+Enter the first player's name:
+
+
+
+
+
+Enter the second player's name:
+
+
+
+
+
+Enter N (the number of tiles to connect in order to win):
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+
+Round 1 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|  R                   |
+
+Round 2 - It's Beth's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|  R                 B |
+
+Round 3 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|  R        R        B |
+
+Round 4 - It's Beth's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|  R        R  B     B |
+
+Round 5 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                      |
+|  R        R  B  R  B |
+
+Round 6 - It's Beth's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|                 B    |
+|  R        R  B  R  B |
+
+Round 7 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|              R  B    |
+|  R        R  B  R  B |
+
+Round 8 - It's Beth's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                      |
+|              R  B  B |
+|  R        R  B  R  B |
+
+Round 9 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                 R    |
+|              R  B  B |
+|  R        R  B  R  B |
+
+Round 10 - It's Beth's turn. Enter the number of the column where you would like to play:
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                      |
+|                 R  B |
+|              R  B  B |
+|  R        R  B  R  B |
+
+Round 11 - It's Ron's turn. Enter the number of the column where you would like to play:
+
+
+
+
+
+
+|  0  1  2  3  4  5  6 |
+|                      |
+|                      |
+|                    R |
+|                 R  B |
+|              R  B  B |
+|  R        R  B  R  B |
+
+
+
+
+The winner is Ron! Choose an option:
+	(1) Play again
+	(2) Return to menu
+	(3) Exit
+
+
+
+
+
+Menu - Choose an option
+	(1) Play Game
+	(2) Settings
+	(3) View Credits
+	(4) Exit
+
+

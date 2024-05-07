@@ -1,0 +1,136 @@
+\doxysection{Game Class Reference}
+\hypertarget{class_game}{}\label{class_game}\index{Game@{Game}}
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Game} ()
+\begin{DoxyCompactList}\small\item\em Cleans up the \doxylink{class_game}{Game} and associated parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a2fa615dfe0586f68c344ba7e20f1c279}{player\+\_\+turn}} (int column)
+\begin{DoxyCompactList}\small\item\em Completes a player\textquotesingle{}s turn by putting their piece on the board in a specified column. A piece will be placed in the column on the board, unless the column is out of bounds or already full. The value of plays\+Next is updated to prepare for the other player\textquotesingle{}s turn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a5520e54d012dc86ebfc549a43290f80f}{render}} () override
+\begin{DoxyCompactList}\small\item\em Renders the current content to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a2f7690204196f8d6500aae6a933ef1a1}{handle\+\_\+input}} () override
+\begin{DoxyCompactList}\small\item\em Accept and handle user input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a9af1831015aa0e64e25a43723f409f06}{set\+\_\+state}} (State s)
+\begin{DoxyCompactList}\small\item\em Set the state of the game. \end{DoxyCompactList}\item 
+\Hypertarget{class_game_a34e61e02bab5f8a0a1911d5184788363}\label{class_game_a34e61e02bab5f8a0a1911d5184788363} 
+void {\bfseries check\+\_\+for\+\_\+game\+\_\+over} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game}{Game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_game_a94292baa43f7adf44cbe0d2204db1d3b}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_scene}{Scene}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_scene_aedd6a190ee1363c35d023259f9ff389e}{content}}
+\item 
+bool \mbox{\hyperlink{class_scene_a2c74507957bd64d03a04fb7e84a268fb}{is\+Rendered}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_a94292baa43f7adf44cbe0d2204db1d3b}\label{class_game_a94292baa43f7adf44cbe0d2204db1d3b} 
+\index{Game@{Game}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game}{Game}} \texorpdfstring{$\ast$}{*} Game\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the singleton instance of this class. 
+
+\begin{DoxyReturn}{Returns}
+s\+\_\+game\+\_\+instance, the static singleton instance 
+\end{DoxyReturn}
+\Hypertarget{class_game_a2f7690204196f8d6500aae6a933ef1a1}\label{class_game_a2f7690204196f8d6500aae6a933ef1a1} 
+\index{Game@{Game}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily void Game\+::handle\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Accept and handle user input. 
+
+Takes in the user input. Depending on the state of the \doxylink{class_game}{Game}, uses it to set one of the players\textquotesingle{} names, set up a board of the appropriate size, or play a move. If in one of the set up states (get\+Player1\+Name, get\+Player2\+Name, or get\+Board\+Size), update to next state \begin{DoxySeeAlso}{See also}
+\doxylink{class_scene}{Scene} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_scene_ad2cea0111fbe68459a3305f7e710df77}{Scene}}.
+
+\Hypertarget{class_game_a2fa615dfe0586f68c344ba7e20f1c279}\label{class_game_a2fa615dfe0586f68c344ba7e20f1c279} 
+\index{Game@{Game}!player\_turn@{player\_turn}}
+\index{player\_turn@{player\_turn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{player\_turn()}{player\_turn()}}
+{\footnotesize\ttfamily int Game\+::player\+\_\+turn (\begin{DoxyParamCaption}\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Completes a player\textquotesingle{}s turn by putting their piece on the board in a specified column. A piece will be placed in the column on the board, unless the column is out of bounds or already full. The value of plays\+Next is updated to prepare for the other player\textquotesingle{}s turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & The column where the piece will be placed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, -\/1 for an out-\/of-\/bounds column, 1 for a full column 
+\end{DoxyReturn}
+\Hypertarget{class_game_a5520e54d012dc86ebfc549a43290f80f}\label{class_game_a5520e54d012dc86ebfc549a43290f80f} 
+\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Renders the current content to the screen. 
+
+\begin{DoxyNote}{Note}
+Unlike the \doxylink{class_credits}{Credits}, \doxylink{class_menu}{Menu}, and \doxylink{class_settings}{Settings} implementations of the \doxylink{class_scene}{Scene} interface, the content printed depends on the state of the \doxylink{class_game}{Game}, and so this method will not always produce the same results. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_credits}{Credits} 
+
+\doxylink{class_menu}{Menu} 
+
+\doxylink{class_settings}{Settings} 
+
+\doxylink{class_scene}{Scene} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_scene_a823f4cd60d27932ee16f74adb0421ff6}{Scene}}.
+
+\Hypertarget{class_game_a9af1831015aa0e64e25a43723f409f06}\label{class_game_a9af1831015aa0e64e25a43723f409f06} 
+\index{Game@{Game}!set\_state@{set\_state}}
+\index{set\_state@{set\_state}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
+{\footnotesize\ttfamily void Game\+::set\+\_\+state (\begin{DoxyParamCaption}\item[{State}]{s }\end{DoxyParamCaption})}
+
+
+
+Set the state of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The new state of the game \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/include/game.\+h\item 
+/\+Users/joeymarkley/\+Documents/\+Visual Studio Code/\+C++/3081\+CSCI/\+Connect\+N/source/game.\+cpp\end{DoxyCompactItemize}
